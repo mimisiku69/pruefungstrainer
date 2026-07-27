@@ -1,0 +1,658 @@
+{
+  "_meta": {
+    "titel": "Hörfehler-Register KI Academy Leipzig",
+    "stand": "2026-07-27",
+    "version": "1.0",
+    "zweck": "Typische Verhörer englischer KI-Begriffe aus automatischen Zoom-/Teams-Mitschriften mit der richtigen Zielform.",
+    "anzahl": 63,
+    "hinweis": "Kuratierter Startbestand. Aus echten Transkripten laufend ergänzen. slug verweist auf den Glossareintrag der Zielform."
+  },
+  "eintraege": [
+    {
+      "richtig": "Machine Learning",
+      "slug": "machine-learning",
+      "falsch": [
+        "Meschin Lörning",
+        "Määschin Lörning",
+        "Machine Lörning",
+        "Mäschin Learning",
+        "Maschin Lörning"
+      ],
+      "hinweis": "engl. Fachbegriff, oft phonetisch verschriftet"
+    },
+    {
+      "richtig": "Deep Learning",
+      "slug": "deep-learning",
+      "falsch": [
+        "Diep Lörning",
+        "Diep Learning",
+        "Deep Lörning",
+        "Diep Löning"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Reinforcement Learning",
+      "slug": "reinforcement-learning",
+      "falsch": [
+        "Rienforcement Lörning",
+        "Reinforsment Learning",
+        "Rihnforsment Lörning"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Supervised Learning",
+      "slug": "ueberwachtes-lernen",
+      "falsch": [
+        "Supervaisd Lörning",
+        "Sjupervaisd Learning"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Unsupervised Learning",
+      "slug": "unueberwachtes-lernen",
+      "falsch": [
+        "Ansupervaisd Lörning",
+        "Unsupervaisd Learning"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Prompt",
+      "slug": "prompt",
+      "falsch": [
+        "Promt",
+        "Prompd",
+        "Promd",
+        "Brompt",
+        "Prombt"
+      ],
+      "hinweis": "häufigster Tippfehler: t statt pt"
+    },
+    {
+      "richtig": "Prompt Engineering",
+      "slug": "prompt-engineering",
+      "falsch": [
+        "Promt Engineering",
+        "Prompt Ingenieuring",
+        "Promt Endschiniering"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "System-Prompt",
+      "slug": "system-prompt",
+      "falsch": [
+        "System Promt",
+        "Systemprompt",
+        "System-Promt"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Token",
+      "slug": "token",
+      "falsch": [
+        "Tocken",
+        "Tokken",
+        "Toten"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Embedding",
+      "slug": "einbettung",
+      "falsch": [
+        "Ambedding",
+        "Imbedding",
+        "Embeding",
+        "Em Bedding",
+        "Ähmbedding"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Fine-Tuning",
+      "slug": "fine-tuning",
+      "falsch": [
+        "Feintuning",
+        "Fein Tuning",
+        "Fine Tuning",
+        "Feintjuning"
+      ],
+      "hinweis": "im Deutschen mit Bindestrich"
+    },
+    {
+      "richtig": "Transformer",
+      "slug": "transformer",
+      "falsch": [
+        "Transformör",
+        "Träänsformer",
+        "Transformäer"
+      ],
+      "hinweis": "Architektur, nicht das Spielzeug"
+    },
+    {
+      "richtig": "Large Language Model",
+      "slug": "large-language-model-grosses-sprachmodell",
+      "falsch": [
+        "Larsch Language Model",
+        "Lartsch Längwidsch Model",
+        "Large Längwitsch Modell"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "LLM",
+      "slug": "large-language-model-grosses-sprachmodell",
+      "falsch": [
+        "El El Em",
+        "Ell Ell Emm"
+      ],
+      "hinweis": "Abkürzung, wird oft ausbuchstabiert transkribiert"
+    },
+    {
+      "richtig": "Hugging Face",
+      "slug": "",
+      "falsch": [
+        "Hacking Face",
+        "Haging Face",
+        "Hugging Fäis",
+        "Hägging Face"
+      ],
+      "hinweis": "Plattform, nicht Hacking"
+    },
+    {
+      "richtig": "ChatGPT",
+      "slug": "chatgpt-business",
+      "falsch": [
+        "Chat GPT",
+        "Chat GPD",
+        "Tschät Gpt",
+        "Schät Dschi Pi Ti",
+        "Chat Gpt"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "GPT",
+      "slug": "",
+      "falsch": [
+        "GPD",
+        "JPT",
+        "Sche Pe Te",
+        "Gpt"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Bias",
+      "slug": "bias-verzerrung",
+      "falsch": [
+        "Beis",
+        "Bajas",
+        "Baias",
+        "Bei As"
+      ],
+      "hinweis": "Verzerrung, engl. ausgesprochen"
+    },
+    {
+      "richtig": "Halluzination",
+      "slug": "halluzination",
+      "falsch": [
+        "Haluzination",
+        "Haluzinationen",
+        "Halutination",
+        "Halluzinazion"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Inferenz",
+      "slug": "inference-inferenz",
+      "falsch": [
+        "Infrängs",
+        "Inferens",
+        "In Ferenz"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Overfitting",
+      "slug": "overfitting",
+      "falsch": [
+        "Oberfitting",
+        "Over Fitting",
+        "Owerfitting"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Underfitting",
+      "slug": "underfitting",
+      "falsch": [
+        "Anderfitting",
+        "Under Fitting"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Framework",
+      "slug": "",
+      "falsch": [
+        "Freimwörk",
+        "Frame Work",
+        "Fräimwörk",
+        "Freim Work"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Open Source",
+      "slug": "",
+      "falsch": [
+        "Open Sors",
+        "Oppen Source",
+        "Open Sauce",
+        "Open Sohs"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Cloud",
+      "slug": "",
+      "falsch": [
+        "Klaud",
+        "Claud"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Dataset",
+      "slug": "",
+      "falsch": [
+        "Data Set",
+        "Deiter Set",
+        "Deita Set"
+      ],
+      "hinweis": "Datensatz"
+    },
+    {
+      "richtig": "Data Science",
+      "slug": "data-science",
+      "falsch": [
+        "Data Seiens",
+        "Deita Science",
+        "Data Sains"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "API",
+      "slug": "api-schnittstelle",
+      "falsch": [
+        "Ei Pi Ei",
+        "A P I",
+        "APi"
+      ],
+      "hinweis": "Schnittstelle"
+    },
+    {
+      "richtig": "Chatbot",
+      "slug": "chatbot",
+      "falsch": [
+        "Tschätbott",
+        "Chat Bot",
+        "Schätbot",
+        "Tschät Bot"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Agent",
+      "slug": "agenten",
+      "falsch": [
+        "Ähdschent",
+        "Ädschent",
+        "Ehdschent"
+      ],
+      "hinweis": "im KI-Kontext: KI-Agent"
+    },
+    {
+      "richtig": "Agentisch",
+      "slug": "agentisches-verhalten",
+      "falsch": [
+        "Agentik",
+        "Ädschentik",
+        "Agentisch e"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Stable Diffusion",
+      "slug": "stable-diffusion",
+      "falsch": [
+        "Steibl Diffusion",
+        "Stable Diffjuschn",
+        "Steibel Diffusion"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Midjourney",
+      "slug": "midjourney",
+      "falsch": [
+        "Mid Journey",
+        "Mitschörni",
+        "Mid Dschörni",
+        "Midschörni"
+      ],
+      "hinweis": "Bildgenerator"
+    },
+    {
+      "richtig": "DALL-E",
+      "slug": "dall-e",
+      "falsch": [
+        "Dali",
+        "Doll E",
+        "Dall I",
+        "Dall E"
+      ],
+      "hinweis": "OpenAI-Bildmodell, nicht der Maler"
+    },
+    {
+      "richtig": "Copilot",
+      "slug": "github-copilot",
+      "falsch": [
+        "Co Pilot",
+        "Kopilot",
+        "Ko Pilot"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "RAG",
+      "slug": "retrieval-augmented-generation-rag",
+      "falsch": [
+        "Räg",
+        "Rack",
+        "Reg",
+        "R A G"
+      ],
+      "hinweis": "Retrieval Augmented Generation"
+    },
+    {
+      "richtig": "Retrieval Augmented Generation",
+      "slug": "retrieval-augmented-generation-rag",
+      "falsch": [
+        "Retrieval Augmented Generäischn",
+        "Ritrievel Augmented Generation"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Vektordatenbank",
+      "slug": "",
+      "falsch": [
+        "Wektordatenbank",
+        "Vektor Datenbank",
+        "Wektor Datenbank"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Chain of Thought",
+      "slug": "chain-of-thought-gedankenkette",
+      "falsch": [
+        "Tschein of Thought",
+        "Chain of Sort",
+        "Tschäin of Thot"
+      ],
+      "hinweis": "Gedankenkette"
+    },
+    {
+      "richtig": "Zero-Shot",
+      "slug": "zero-shot-learning",
+      "falsch": [
+        "Siro Schott",
+        "Zero Schott",
+        "Siro Shot"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Few-Shot",
+      "slug": "few-shot-learning",
+      "falsch": [
+        "Fju Schott",
+        "Few Schott",
+        "Fjuh Shot"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Foundation Model",
+      "slug": "foundation-model-grundlagenmodell",
+      "falsch": [
+        "Faundäischn Model",
+        "Foundäischn Modell",
+        "Faundation Model"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Multimodal",
+      "slug": "multimodale-modelle",
+      "falsch": [
+        "Multi Modal",
+        "Multimodahl"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Guardrails",
+      "slug": "guardrails",
+      "falsch": [
+        "Gard Rails",
+        "Guard Reils",
+        "Gardreils"
+      ],
+      "hinweis": "Leitplanken"
+    },
+    {
+      "richtig": "Governance",
+      "slug": "ki-governance",
+      "falsch": [
+        "Governanz",
+        "Gawernans",
+        "Gowernans"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Compliance",
+      "slug": "compliance",
+      "falsch": [
+        "Complaiens",
+        "Kompliance",
+        "Komplaiens"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "EU AI Act",
+      "slug": "eu-ai-act-artikel-4",
+      "falsch": [
+        "EU AI Ekt",
+        "EU KI Act",
+        "EU AI Äkt",
+        "EU A I Act"
+      ],
+      "hinweis": "EU-Verordnung"
+    },
+    {
+      "richtig": "Deepfake",
+      "slug": "deepfake",
+      "falsch": [
+        "Diepfake",
+        "Deep Fake",
+        "Diep Feik",
+        "Dief Fake"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Ground Truth",
+      "slug": "",
+      "falsch": [
+        "Graund Truth",
+        "Ground Trust",
+        "Graund Trues"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Annotation",
+      "slug": "annotation-annotierung",
+      "falsch": [
+        "Annotäischn",
+        "Anotation",
+        "Annotäation"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Labeling",
+      "slug": "annotation-annotierung",
+      "falsch": [
+        "Läibeling",
+        "Leibeling",
+        "Label ing"
+      ],
+      "hinweis": "Datenkennzeichnung"
+    },
+    {
+      "richtig": "Pipeline",
+      "slug": "datenpipeline",
+      "falsch": [
+        "Peiplain",
+        "Pipe Line",
+        "Peip Lain"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Deployment",
+      "slug": "",
+      "falsch": [
+        "Deploiment",
+        "Diploiment",
+        "Deploimänt"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Scraping",
+      "slug": "scraping",
+      "falsch": [
+        "Skreiping",
+        "Scrapen",
+        "Skräiping"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Benchmark",
+      "slug": "",
+      "falsch": [
+        "Bentschmark",
+        "Bench Mark",
+        "Bentsch Mark"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Quantisierung",
+      "slug": "",
+      "falsch": [
+        "Quantaiseischn",
+        "Kwantisierung",
+        "Quantifizierung"
+      ],
+      "hinweis": "Modellkompression, nicht Quantifizierung"
+    },
+    {
+      "richtig": "Kontextfenster",
+      "slug": "kontextfenster-context-window",
+      "falsch": [
+        "Kontext Windou",
+        "Context Window",
+        "Kontext Fenster"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Jailbreak",
+      "slug": "",
+      "falsch": [
+        "Dschailbreak",
+        "Jail Break",
+        "Scheilbreik",
+        "Dscheilbreak"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Alignment",
+      "slug": "alignment-ausrichtung",
+      "falsch": [
+        "Alainment",
+        "Alignmänt",
+        "Alain Ment"
+      ],
+      "hinweis": "Ausrichtung"
+    },
+    {
+      "richtig": "Reasoning",
+      "slug": "reasoning-modell",
+      "falsch": [
+        "Riesning",
+        "Räsoning",
+        "Riehsoning"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Diffusionsmodell",
+      "slug": "diffusionsmodell",
+      "falsch": [
+        "Diffjuschn Modell",
+        "Diffusion Model",
+        "Diffjuschn Model"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Neuronales Netz",
+      "slug": "neuronales-netzwerk",
+      "falsch": [
+        "Neurales Netz",
+        "Njuronales Netz",
+        "Neuronale Netz"
+      ],
+      "hinweis": ""
+    },
+    {
+      "richtig": "Künstliche Intelligenz",
+      "slug": "kuenstliche-intelligenz-ki",
+      "falsch": [
+        "Künstige Intelligenz",
+        "Künstlicher Intelligenz e",
+        "Kunstliche Intelligenz"
+      ],
+      "hinweis": ""
+    }
+  ]
+}
