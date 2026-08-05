@@ -1,0 +1,1634 @@
+{
+  "id": "transformation-expert-industrie-40-50-tuev-v2",
+  "title": "Transformation Expert Industrie 4.0/5.0",
+  "subtitle": "TÜV Rheinland / PersCert · 78 Fragen · Version 2.1",
+  "config": {
+    "examQuestions": 30,
+    "examMinutes": 45,
+    "passPercent": 60,
+    "topicSimQuestions": 20
+  },
+  "topics": [
+    {
+      "id": "grundlagen",
+      "name": "Grundlagen Industrie 4.0/5.0"
+    },
+    {
+      "id": "technologien",
+      "name": "Schlüsseltechnologien & Smart Factory"
+    },
+    {
+      "id": "ki-daten",
+      "name": "KI, Machine Learning & Daten"
+    },
+    {
+      "id": "iot-vernetzung",
+      "name": "IoT, Vernetzung & Standards"
+    },
+    {
+      "id": "recht",
+      "name": "Recht, Datenschutz & Cybersicherheit"
+    },
+    {
+      "id": "ethik-mensch",
+      "name": "Ethik, Mensch & Arbeitswelt"
+    },
+    {
+      "id": "change",
+      "name": "Change Management & Transformation"
+    },
+    {
+      "id": "prozesse-kpi",
+      "name": "Prozesse, Lean/Smart Production & Kennzahlen"
+    },
+    {
+      "id": "strategie-reifegrad",
+      "name": "Strategie, Reifegrad & Roadmap"
+    }
+  ],
+  "statements": [
+    {
+      "id": "st-01",
+      "topic": "grundlagen",
+      "question": "Der Begriff Industrie 4.0 wurde 2011 auf der Hannover Messe erstmals öffentlich vorgestellt.",
+      "answer": true,
+      "explanation": "Richtig. Die Promotorengruppe Kommunikation der Forschungsunion Wirtschaft-Wissenschaft stellte den Begriff 2011 auf der Hannover Messe vor. Der Abschlussbericht des Arbeitskreises Industrie 4.0 folgte im April 2013."
+    },
+    {
+      "id": "st-02",
+      "topic": "grundlagen",
+      "question": "Industrie 5.0 ersetzt Industrie 4.0 vollständig.",
+      "answer": false,
+      "explanation": "Falsch. Die EU-Kommission beschreibt Industrie 5.0 als Ergänzung des bestehenden Industrie-4.0-Paradigmas, nicht als Ablösung. Die Technologiebasis bleibt, der Zielrahmen verschiebt sich."
+    },
+    {
+      "id": "st-03",
+      "topic": "grundlagen",
+      "question": "Die drei Kernwerte von Industrie 5.0 nach dem EU-Report von 2021 sind Mensch-Zentrierung, Nachhaltigkeit und Resilienz.",
+      "answer": true,
+      "explanation": "Richtig. Der Report der EU-Kommission (Generaldirektion Forschung und Innovation) nennt human-centricity, sustainability und resilience als die drei tragenden Werte."
+    },
+    {
+      "id": "st-04",
+      "topic": "grundlagen",
+      "question": "Horizontale Integration bezeichnet die Vernetzung über Unternehmensgrenzen hinweg entlang der Wertschöpfungskette.",
+      "answer": true,
+      "explanation": "Richtig. Horizontale Integration verbindet Lieferanten, Produktion, Logistik und Kunden. Vertikale Integration verbindet dagegen die Hierarchieebenen innerhalb eines Unternehmens."
+    },
+    {
+      "id": "st-05",
+      "topic": "grundlagen",
+      "question": "Vertikale Integration beschreibt die durchgängige Vernetzung von der Feldebene über MES bis zur ERP-Ebene.",
+      "answer": true,
+      "explanation": "Richtig. Vertikale Integration schafft einen durchgängigen Datenfluss über die Automatisierungspyramide hinweg, von Sensorik und Shopfloor bis in die Unternehmensleitebene."
+    },
+    {
+      "id": "st-06",
+      "topic": "technologien",
+      "question": "Ein Digitaler Zwilling ist ein virtuelles, datenbasiertes Abbild eines physischen Assets, das über dessen Lebenszyklus mit Daten versorgt wird.",
+      "answer": true,
+      "explanation": "Richtig. Der Digitale Zwilling unterscheidet sich von einer statischen Datenbank dadurch, dass er den aktuellen Zustand abbildet und Simulation sowie Vorhersage ermöglicht."
+    },
+    {
+      "id": "st-07",
+      "topic": "technologien",
+      "question": "Kollaborative Roboter (Cobots) arbeiten grundsätzlich autonom und ohne jede Berührung mit Menschen.",
+      "answer": false,
+      "explanation": "Falsch. Cobots sind gerade für die direkte Zusammenarbeit mit Menschen ausgelegt. Sie arbeiten bei eingehaltenen Sicherheitsanforderungen ohne trennende Schutzeinrichtung, mit Kraft- und Kollisionsbegrenzung."
+    },
+    {
+      "id": "st-08",
+      "topic": "technologien",
+      "question": "Die Verwaltungsschale (Asset Administration Shell) ist die standardisierte Umsetzung des Digitalen Zwillings für die Industrie-4.0-Komponente.",
+      "answer": true,
+      "explanation": "Richtig. Die Verwaltungsschale bündelt Identifikations-, technische und Betriebsdaten eines Assets in einem herstellerunabhängigen, maschinenlesbaren Metamodell. Entwickelt von der Plattform Industrie 4.0 und der IDTA."
+    },
+    {
+      "id": "st-09",
+      "topic": "technologien",
+      "question": "Additive Fertigung eignet sich ausschließlich für den Prototypenbau.",
+      "answer": false,
+      "explanation": "Falsch. Additive Fertigung wird auch in der Serien- und Ersatzteilfertigung eingesetzt, etwa bei kleinen Losgrößen, komplexen Geometrien oder Bauteilen, die konventionell nicht herstellbar wären."
+    },
+    {
+      "id": "st-10",
+      "topic": "ki-daten",
+      "question": "Generative KI ist ein Teilgebiet des maschinellen Lernens.",
+      "answer": true,
+      "explanation": "Richtig. Die Begriffe sind verschachtelt: KI ist der Oberbegriff, maschinelles Lernen eine Methode darin, Deep Learning eine ML-Variante und generative KI eine darauf aufbauende Anwendungsklasse."
+    },
+    {
+      "id": "st-11",
+      "topic": "ki-daten",
+      "question": "Überwachtes Lernen (Supervised Learning) benötigt Trainingsdaten mit vorgegebenen Zielwerten (Labels).",
+      "answer": true,
+      "explanation": "Richtig. Labels sind das Kennzeichen des überwachten Lernens. Unüberwachtes Lernen arbeitet ohne Labels und sucht selbst Strukturen in den Daten, etwa Cluster."
+    },
+    {
+      "id": "st-12",
+      "topic": "ki-daten",
+      "question": "Weil Sprachmodelle auf sehr großen Datenmengen trainiert wurden, sind ihre Aussagen faktisch zuverlässig und müssen nicht geprüft werden.",
+      "answer": false,
+      "explanation": "Falsch. Sprachmodelle erzeugen wahrscheinlichen, nicht garantiert wahren Text und können halluzinieren. Bei entscheidungsrelevanten Inhalten bleibt die menschliche Prüfung notwendig."
+    },
+    {
+      "id": "st-13",
+      "topic": "ki-daten",
+      "question": "Die Vorhersage der Restlaufzeit eines Bauteils aus Sensordaten ist eine typische Regressionsaufgabe.",
+      "answer": true,
+      "explanation": "Richtig. Regression sagt kontinuierliche Zahlenwerte voraus. Die Zuordnung zu diskreten Klassen, etwa defekt oder in Ordnung, wäre dagegen eine Klassifikation."
+    },
+    {
+      "id": "st-14",
+      "topic": "iot-vernetzung",
+      "question": "AIoT bezeichnet die Verbindung von Künstlicher Intelligenz mit dem Internet der Dinge.",
+      "answer": true,
+      "explanation": "Richtig. AIoT steht für Artificial Intelligence of Things. Die Auswertung verlagert sich dabei näher an das Gerät, sodass Entscheidungen ohne Umweg über die Cloud möglich werden."
+    },
+    {
+      "id": "st-15",
+      "topic": "iot-vernetzung",
+      "question": "Edge Analytics verarbeitet Daten nahe an ihrem Entstehungsort statt zentral in der Cloud.",
+      "answer": true,
+      "explanation": "Richtig. Die lokale Verarbeitung senkt Latenz und Bandbreitenbedarf. Das ist besonders bei Echtzeitanforderungen und bei sensiblen Daten relevant."
+    },
+    {
+      "id": "st-16",
+      "topic": "iot-vernetzung",
+      "question": "M2M bezeichnet die Kommunikation zwischen Mensch und Maschine.",
+      "answer": false,
+      "explanation": "Falsch. M2M steht für Machine-to-Machine, also den automatisierten Datenaustausch zwischen Geräten ohne menschliches Zutun. M2M gilt als Vorläufer und Teilmenge des IoT."
+    },
+    {
+      "id": "st-17",
+      "topic": "iot-vernetzung",
+      "question": "OPC UA ist in der Normenreihe IEC 62541 spezifiziert.",
+      "answer": true,
+      "explanation": "Richtig. OPC UA (Open Platform Communications Unified Architecture) geht auf die OPC Foundation zurück und ist als IEC 62541 normiert. In RAMI 4.0 ist es dem Communication Layer zugeordnet."
+    },
+    {
+      "id": "st-18",
+      "topic": "recht",
+      "question": "Die Transparenzpflichten des Artikel 50 EU AI Act gelten ab dem 2. August 2026.",
+      "answer": true,
+      "explanation": "Richtig. Die Verordnung (EU) 2024/1689 trat am 1. August 2024 in Kraft; Artikel 50 gilt nach Artikel 113 ab dem 2. August 2026. Der Digital Omnibus hat die Hochrisiko-Fristen verschoben, Artikel 50 jedoch nicht."
+    },
+    {
+      "id": "st-19",
+      "topic": "recht",
+      "question": "Die DSGVO gilt ausschließlich für öffentliche Stellen.",
+      "answer": false,
+      "explanation": "Falsch. Die DSGVO gilt für alle Verantwortlichen und Auftragsverarbeiter, die personenbezogene Daten verarbeiten, unabhängig von öffentlicher oder privater Trägerschaft."
+    },
+    {
+      "id": "st-20",
+      "topic": "recht",
+      "question": "Eine Datenschutz-Folgenabschätzung nach Artikel 35 DSGVO ist erforderlich, wenn eine Verarbeitung voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge hat.",
+      "answer": true,
+      "explanation": "Richtig. Artikel 35 DSGVO knüpft die Pflicht zur DSFA an ein voraussichtlich hohes Risiko, das insbesondere bei neuen Technologien und umfangreicher Verarbeitung sensibler Daten entstehen kann."
+    },
+    {
+      "id": "st-21",
+      "topic": "recht",
+      "question": "Das deutsche NIS-2-Umsetzungsgesetz ist am 6. Dezember 2025 in Kraft getreten.",
+      "answer": true,
+      "explanation": "Richtig. Das NIS2UmsuCG wurde am 6. Dezember 2025 im Bundesgesetzblatt verkündet und gilt seitdem ohne allgemeine Übergangsfrist. Es erweitert den Anwendungsbereich des BSI-Gesetzes erheblich."
+    },
+    {
+      "id": "st-22",
+      "topic": "recht",
+      "question": "KRITIS umfasst ausschließlich Unternehmen der Energieversorgung.",
+      "answer": false,
+      "explanation": "Falsch. Zu den kritischen Infrastrukturen zählen unter anderem Energie, Wasser, Ernährung, IT und Telekommunikation, Gesundheit, Finanz- und Versicherungswesen, Transport und Verkehr sowie Siedlungsabfallentsorgung."
+    },
+    {
+      "id": "st-23",
+      "topic": "ethik-mensch",
+      "question": "KI-Systeme treffen aufgrund ihrer mathematischen Grundlage grundsätzlich neutrale Entscheidungen.",
+      "answer": false,
+      "explanation": "Falsch. KI-Systeme übernehmen Verzerrungen aus Trainingsdaten, Modellwahl und Zielsetzung. Fairness entsteht nicht von selbst, sondern erfordert gezielte Analyse und Gegenmaßnahmen."
+    },
+    {
+      "id": "st-24",
+      "topic": "ethik-mensch",
+      "question": "Nach § 87 Absatz 1 Nummer 6 BetrVG hat der Betriebsrat ein Mitbestimmungsrecht bei der Einführung technischer Einrichtungen, die zur Überwachung von Verhalten oder Leistung der Beschäftigten geeignet sind.",
+      "answer": true,
+      "explanation": "Richtig. Nach ständiger Rechtsprechung des Bundesarbeitsgerichts genügt die objektive Eignung zur Überwachung; eine entsprechende Absicht des Arbeitgebers ist nicht erforderlich. Das betrifft auch KI-gestützte Systeme."
+    },
+    {
+      "id": "st-25",
+      "topic": "ethik-mensch",
+      "question": "Upskilling und Reskilling bezeichnen denselben Vorgang.",
+      "answer": false,
+      "explanation": "Falsch. Upskilling vertieft und erweitert Kompetenzen für die aktuelle Rolle. Reskilling qualifiziert für eine andere Tätigkeit, etwa wenn ein Aufgabenfeld wegfällt."
+    },
+    {
+      "id": "st-26",
+      "topic": "ethik-mensch",
+      "question": "Psychosoziale Belastungen wie Überforderung oder erlebter Kontrollverlust sind bei der digitalen Transformation zu berücksichtigen.",
+      "answer": true,
+      "explanation": "Richtig. Industrie 5.0 rückt das Wohlbefinden der Beschäftigten in den Mittelpunkt. Auch die Gefährdungsbeurteilung nach Arbeitsschutzgesetz umfasst psychische Belastungen."
+    },
+    {
+      "id": "st-27",
+      "topic": "change",
+      "question": "Die fünf Schritte des ADKAR-Modells lauten Awareness, Desire, Knowledge, Ability und Reinforcement.",
+      "answer": true,
+      "explanation": "Richtig. Das Modell wurde von Jeff Hiatt bei Prosci entwickelt und beschreibt Veränderung auf Ebene der einzelnen Person. Automation gehört ausdrücklich nicht dazu."
+    },
+    {
+      "id": "st-28",
+      "topic": "change",
+      "question": "Das Drei-Phasen-Modell von Kurt Lewin unterscheidet Auftauen, Verändern und Einfrieren.",
+      "answer": true,
+      "explanation": "Richtig. Lewin beschreibt Veränderung als Abfolge von unfreezing, moving und refreezing. Es ist eines der ältesten und bis heute meistzitierten Change-Modelle."
+    },
+    {
+      "id": "st-29",
+      "topic": "change",
+      "question": "Widerstand gegen Veränderung ist ein Zeichen mangelnder Motivation und lässt sich durch klare Anweisungen vollständig auflösen.",
+      "answer": false,
+      "explanation": "Falsch. Widerstand ist eine normale Reaktion und oft sachlich begründet, etwa durch Kontrollverlust, unklare Perspektive oder fehlende Kompetenz. Er wird bearbeitet, nicht per Anweisung beseitigt."
+    },
+    {
+      "id": "st-30",
+      "topic": "prozesse-kpi",
+      "question": "Die Gesamtanlageneffektivität (OEE) ergibt sich aus dem Produkt von Verfügbarkeit, Leistung und Qualität.",
+      "answer": true,
+      "explanation": "Richtig. OEE = Verfügbarkeit × Leistung × Qualität. Die Kennzahl geht auf Seiichi Nakajima und das TPM-Konzept zurück und ist in ISO 22400-2 beschrieben."
+    },
+    {
+      "id": "st-31",
+      "topic": "prozesse-kpi",
+      "question": "Lean Production und Industrie 4.0 schließen sich methodisch gegenseitig aus.",
+      "answer": false,
+      "explanation": "Falsch. Lean und Industrie 4.0 ergänzen sich. Lean schafft stabile, verschwendungsarme Prozesse als Grundlage; die Digitalisierung liefert Transparenz und Datenbasis für weitere Verbesserung."
+    },
+    {
+      "id": "st-32",
+      "topic": "prozesse-kpi",
+      "question": "Präventive Instandhaltung erfolgt nach festen Intervallen, prädiktive Instandhaltung nach dem prognostizierten Ausfallzeitpunkt.",
+      "answer": true,
+      "explanation": "Richtig. Präventive Wartung ist zeit- oder nutzungsbasiert, zustandsbasierte Wartung schwellenwertbasiert, prädiktive Wartung nutzt Trend- und Prognosemodelle auf Basis von Zustandsdaten."
+    },
+    {
+      "id": "st-33",
+      "topic": "strategie-reifegrad",
+      "question": "Der acatech Industrie 4.0 Maturity Index unterscheidet die vier Gestaltungsfelder Ressourcen, Informationssysteme, Kultur und Organisationsstruktur.",
+      "answer": true,
+      "explanation": "Richtig. Zu jedem Gestaltungsfeld gehören zwei handlungsleitende Prinzipien. Der Index wurde 2017 veröffentlicht und 2020 aktualisiert."
+    },
+    {
+      "id": "st-34",
+      "topic": "strategie-reifegrad",
+      "question": "Das Referenzarchitekturmodell RAMI 4.0 besteht aus zwei Achsen.",
+      "answer": false,
+      "explanation": "Falsch. RAMI 4.0 ist dreidimensional. Die drei Achsen sind Layers (sechs Schichten), Life Cycle & Value Stream (nach IEC 62890) und Hierarchy Levels (nach IEC 62264 und IEC 61512)."
+    },
+    {
+      "id": "st-35",
+      "topic": "strategie-reifegrad",
+      "question": "RAMI 4.0 ist als DIN SPEC 91345 dokumentiert.",
+      "answer": true,
+      "explanation": "Richtig. Die DIN SPEC 91345 wurde 2016 veröffentlicht. International wurde das Modell zudem als IEC PAS 63088 geführt. Herausgeber sind ZVEI, VDI/VDE-GMA und die Plattform Industrie 4.0."
+    }
+  ],
+  "mcQuestions": [
+    {
+      "id": "mc-01",
+      "topic": "grundlagen",
+      "question": "Worin unterscheidet sich Industrie 5.0 von Industrie 4.0?",
+      "options": [
+        {
+          "text": "Industrie 5.0 stellt den Menschen, Nachhaltigkeit und Resilienz in den Mittelpunkt",
+          "correct": true,
+          "explanation": "Richtig. Der EU-Report von 2021 nennt human-centricity, sustainability und resilience als die drei tragenden Werte."
+        },
+        {
+          "text": "Industrie 5.0 verschiebt den Fokus von Shareholder- auf Stakeholder-Wert",
+          "correct": true,
+          "explanation": "Richtig. Die EU-Kommission beschreibt diesen Perspektivwechsel ausdrücklich als Kern von Industrie 5.0."
+        },
+        {
+          "text": "Industrie 5.0 verzichtet auf die Technologien der Industrie 4.0",
+          "correct": false,
+          "explanation": "Falsch. Die technologische Basis bleibt bestehen; verändert wird der Zielrahmen, nicht das Werkzeug."
+        },
+        {
+          "text": "Industrie 5.0 ist ausschließlich für Großkonzerne relevant",
+          "correct": false,
+          "explanation": "Falsch. Die Prinzipien sind unabhängig von der Unternehmensgröße anwendbar."
+        },
+        {
+          "text": "Industrie 5.0 ist ein rein deutsches Konzept",
+          "correct": false,
+          "explanation": "Falsch. Industrie 5.0 wurde von der Europäischen Kommission geprägt; Industrie 4.0 hingegen hat seinen Ursprung in Deutschland."
+        }
+      ]
+    },
+    {
+      "id": "mc-02",
+      "topic": "grundlagen",
+      "question": "Was kennzeichnet ein cyber-physisches System (CPS)?",
+      "options": [
+        {
+          "text": "Die Verbindung physischer Komponenten mit Rechen- und Kommunikationsfähigkeit",
+          "correct": true,
+          "explanation": "Richtig. CPS verknüpfen mechanische oder elektronische Komponenten über Sensorik, Aktorik und Netzwerk mit digitaler Verarbeitung."
+        },
+        {
+          "text": "Sensorik und Aktorik zur Erfassung und Beeinflussung physischer Vorgänge",
+          "correct": true,
+          "explanation": "Richtig. Ohne Sensorik und Aktorik bliebe die Kopplung von physischer und digitaler Welt unvollständig."
+        },
+        {
+          "text": "Eine Netzwerkanbindung zum Datenaustausch mit anderen Systemen",
+          "correct": true,
+          "explanation": "Richtig. Die Vernetzung unterscheidet CPS von rein eingebetteten Systemen."
+        },
+        {
+          "text": "Der vollständige Verzicht auf digitale Datenverarbeitung",
+          "correct": false,
+          "explanation": "Falsch. Die digitale Verarbeitung ist konstitutiv für ein CPS."
+        },
+        {
+          "text": "Die ausschließliche Nutzung durch menschliche Bediener vor Ort",
+          "correct": false,
+          "explanation": "Falsch. CPS sind gerade auf autonome und vernetzte Interaktion ausgelegt."
+        }
+      ]
+    },
+    {
+      "id": "mc-03",
+      "topic": "grundlagen",
+      "question": "Welche Zuordnung der industriellen Revolutionen ist zutreffend?",
+      "options": [
+        {
+          "text": "Erste Revolution: Mechanisierung durch Wasser- und Dampfkraft",
+          "correct": true,
+          "explanation": "Richtig. Die erste industrielle Revolution ab Ende des 18. Jahrhunderts beruhte auf mechanischen Produktionsanlagen mit Wasser- und Dampfkraft."
+        },
+        {
+          "text": "Zweite Revolution: Massenfertigung durch elektrische Energie und Arbeitsteilung",
+          "correct": true,
+          "explanation": "Richtig. Fließbandfertigung und Elektrifizierung kennzeichnen die zweite Revolution ab etwa 1870."
+        },
+        {
+          "text": "Dritte Revolution: Automatisierung durch Elektronik und IT",
+          "correct": true,
+          "explanation": "Richtig. Speicherprogrammierbare Steuerungen und IT-Einsatz ab den 1970er Jahren kennzeichnen die dritte Revolution."
+        },
+        {
+          "text": "Vierte Revolution: Vernetzung über cyber-physische Systeme",
+          "correct": true,
+          "explanation": "Richtig. Industrie 4.0 beruht auf der Vernetzung von CPS und der durchgängigen Datennutzung."
+        },
+        {
+          "text": "Fünfte Revolution: Rückkehr zur reinen Handarbeit",
+          "correct": false,
+          "explanation": "Falsch. Industrie 5.0 ist kein Rückschritt, sondern eine Neuausrichtung der Zielsetzung bei fortbestehender Technologiebasis."
+        }
+      ]
+    },
+    {
+      "id": "mc-04",
+      "topic": "grundlagen",
+      "question": "Ein Zulieferer verknüpft sein Produktionsplanungssystem direkt mit dem System seines Kunden, sodass Bedarfe automatisch übertragen werden. Um welche Form der Integration handelt es sich, und was folgt daraus?",
+      "options": [
+        {
+          "text": "Es handelt sich um horizontale Integration über Unternehmensgrenzen hinweg",
+          "correct": true,
+          "explanation": "Richtig. Die Kopplung entlang der Wertschöpfungskette zwischen Unternehmen ist der Kern horizontaler Integration."
+        },
+        {
+          "text": "Es handelt sich um vertikale Integration innerhalb des Zulieferers",
+          "correct": false,
+          "explanation": "Falsch. Vertikale Integration betrifft die Ebenen innerhalb eines Unternehmens, von der Feldebene bis zur Leitebene."
+        },
+        {
+          "text": "Datenschutz- und Geheimhaltungsfragen sind vertraglich zu regeln",
+          "correct": true,
+          "explanation": "Richtig. Unternehmensübergreifender Datenaustausch berührt Betriebs- und Geschäftsgeheimnisse und gegebenenfalls personenbezogene Daten."
+        },
+        {
+          "text": "Es entsteht eine Abhängigkeit, die im Risikomanagement zu berücksichtigen ist",
+          "correct": true,
+          "explanation": "Richtig. Enge Kopplung erhöht die Effizienz, aber auch die Verwundbarkeit bei Ausfällen oder Angriffen in der Lieferkette."
+        },
+        {
+          "text": "Eine Schnittstellenstandardisierung ist dabei entbehrlich",
+          "correct": false,
+          "explanation": "Falsch. Ohne gemeinsame Standards, etwa OPC UA oder EDI, ist eine belastbare Kopplung kaum wirtschaftlich umsetzbar."
+        }
+      ]
+    },
+    {
+      "id": "mc-05",
+      "topic": "technologien",
+      "question": "Was leistet ein Digitaler Zwilling, was eine klassische Datenbank nicht leistet?",
+      "options": [
+        {
+          "text": "Er bildet den aktuellen Zustand des physischen Assets fortlaufend ab",
+          "correct": true,
+          "explanation": "Richtig. Der Zwilling wird kontinuierlich mit Zustandsdaten versorgt und ist damit dynamisch, nicht statisch."
+        },
+        {
+          "text": "Er erlaubt Simulation von Szenarien und Vorhersage von Verhalten",
+          "correct": true,
+          "explanation": "Richtig. Das hinterlegte Modell ermöglicht Was-wäre-wenn-Betrachtungen und prädiktive Auswertungen."
+        },
+        {
+          "text": "Er speichert historische Werte",
+          "correct": false,
+          "explanation": "Falsch als Abgrenzung. Historische Werte speichert eine Datenbank ebenfalls; das ist kein Alleinstellungsmerkmal des Zwillings."
+        },
+        {
+          "text": "Er ersetzt jede physische Prüfung vollständig",
+          "correct": false,
+          "explanation": "Falsch. Der Zwilling reduziert den Prüfaufwand, ersetzt aber nicht alle realen Tests und Abnahmen."
+        },
+        {
+          "text": "Er unterstützt Entscheidungen über den gesamten Lebenszyklus des Assets",
+          "correct": true,
+          "explanation": "Richtig. Von Entwicklung über Betrieb bis Außerbetriebnahme bündelt der Zwilling die entscheidungsrelevanten Informationen."
+        }
+      ]
+    },
+    {
+      "id": "mc-06",
+      "topic": "technologien",
+      "question": "Worin unterscheidet sich ein Cobot von einem klassischen Industrieroboter?",
+      "options": [
+        {
+          "text": "Der Cobot arbeitet bei eingehaltenen Sicherheitsanforderungen ohne trennende Schutzeinrichtung",
+          "correct": true,
+          "explanation": "Richtig. Kraft- und Leistungsbegrenzung sowie Kollisionserkennung ermöglichen den gemeinsamen Arbeitsraum."
+        },
+        {
+          "text": "Der Cobot hat in der Regel geringere Traglast und Geschwindigkeit",
+          "correct": true,
+          "explanation": "Richtig. Die Sicherheitsanforderungen begrenzen Kraft und Tempo, was die erreichbare Leistung reduziert."
+        },
+        {
+          "text": "Klassische Industrieroboter benötigen meist eine Schutzumhausung",
+          "correct": true,
+          "explanation": "Richtig. Wegen hoher Kräfte und Geschwindigkeiten ist eine räumliche Trennung von Mensch und Maschine erforderlich."
+        },
+        {
+          "text": "Cobots sind grundsätzlich sicher und benötigen keine Risikobeurteilung",
+          "correct": false,
+          "explanation": "Falsch. Sicherheit ergibt sich aus der konkreten Applikation, nicht aus dem Robotertyp. Eine Risikobeurteilung ist immer erforderlich."
+        },
+        {
+          "text": "Cobots ersetzen klassische Industrieroboter vollständig",
+          "correct": false,
+          "explanation": "Falsch. Beide Bauarten haben unterschiedliche Einsatzprofile und werden parallel genutzt."
+        }
+      ]
+    },
+    {
+      "id": "mc-07",
+      "topic": "technologien",
+      "question": "Welche Bausteine gehören typischerweise zu einer Smart Factory?",
+      "options": [
+        {
+          "text": "Vernetzte Sensorik zur durchgängigen Zustandserfassung",
+          "correct": true,
+          "explanation": "Richtig. Ohne Datenerfassung an der Quelle fehlt jede weitere Auswertung die Grundlage."
+        },
+        {
+          "text": "Digitale Zwillinge von Anlagen und Produkten",
+          "correct": true,
+          "explanation": "Richtig. Sie ermöglichen Simulation, Optimierung und vorausschauende Instandhaltung."
+        },
+        {
+          "text": "Durchgängige Datenintegration von der Feldebene bis zur Leitebene",
+          "correct": true,
+          "explanation": "Richtig. Vertikale Integration ist Voraussetzung für Transparenz und Steuerbarkeit."
+        },
+        {
+          "text": "Assistenzsysteme für Mitarbeitende, etwa über Augmented Reality",
+          "correct": true,
+          "explanation": "Richtig. Assistenzsysteme unterstützen bei Montage, Wartung und Qualifizierung und entsprechen dem Leitbild der Mensch-Zentrierung."
+        },
+        {
+          "text": "Der vollständige Verzicht auf menschliche Arbeitskraft",
+          "correct": false,
+          "explanation": "Falsch. Die Smart Factory zielt auf Unterstützung und Flexibilisierung, nicht auf die menschenleere Fabrik."
+        }
+      ]
+    },
+    {
+      "id": "mc-08",
+      "topic": "technologien",
+      "question": "Ein Instandhaltungsteam soll bei komplexen Reparaturen unterstützt werden. Welche Aussagen zu Assistenzsystemen und Extended Reality (XR) treffen zu?",
+      "options": [
+        {
+          "text": "Augmented Reality kann Arbeitsanweisungen direkt im Sichtfeld einblenden",
+          "correct": true,
+          "explanation": "Richtig. Die Überlagerung realer Objekte mit digitalen Informationen verkürzt Suchzeiten und reduziert Fehler."
+        },
+        {
+          "text": "Virtual Reality eignet sich für gefahrloses Training an virtuellen Anlagen",
+          "correct": true,
+          "explanation": "Richtig. Kritische oder seltene Situationen lassen sich ohne Risiko und ohne Anlagenstillstand üben."
+        },
+        {
+          "text": "Remote-Support ermöglicht die Einbindung entfernter Fachleute in Echtzeit",
+          "correct": true,
+          "explanation": "Richtig. Fachwissen wird verfügbar, ohne dass Spezialisten anreisen müssen."
+        },
+        {
+          "text": "Assistenzsysteme mit Kamerabild sind mitbestimmungsrechtlich stets unproblematisch",
+          "correct": false,
+          "explanation": "Falsch. Sind sie zur Überwachung von Verhalten oder Leistung geeignet, greift § 87 Absatz 1 Nummer 6 BetrVG."
+        },
+        {
+          "text": "XR-Systeme machen jede Qualifizierung der Beschäftigten überflüssig",
+          "correct": false,
+          "explanation": "Falsch. Assistenzsysteme ergänzen Qualifikation, ersetzen aber weder Fachkenntnis noch Verantwortung."
+        }
+      ]
+    },
+    {
+      "id": "mc-09",
+      "topic": "ki-daten",
+      "question": "Welche Aussagen zu generativer KI im industriellen Umfeld treffen zu?",
+      "options": [
+        {
+          "text": "Sie erzeugt neue Inhalte wie Text, Bild oder Code statt nur zu klassifizieren",
+          "correct": true,
+          "explanation": "Richtig. Das unterscheidet sie von klassischen ML-Verfahren zur Klassifikation oder Regression."
+        },
+        {
+          "text": "Sie kann bei der Erstellung von Wartungsdokumentation und Arbeitsanweisungen unterstützen",
+          "correct": true,
+          "explanation": "Richtig. Dokumentation, Übersetzung und Zusammenfassung sind bewährte industrielle Anwendungsfelder."
+        },
+        {
+          "text": "Sie kann inhaltlich falsche, aber überzeugend formulierte Aussagen erzeugen",
+          "correct": true,
+          "explanation": "Richtig. Solche Halluzinationen machen eine fachliche Prüfung der Ausgaben erforderlich."
+        },
+        {
+          "text": "Sie ist das übliche Verfahren für Predictive Maintenance",
+          "correct": false,
+          "explanation": "Falsch. Vorausschauende Instandhaltung beruht auf klassischen ML-Verfahren wie Regression und Klassifikation, nicht auf generativen Modellen."
+        },
+        {
+          "text": "Sie arbeitet ohne jede Trainingsdatengrundlage",
+          "correct": false,
+          "explanation": "Falsch. Generative Modelle werden auf sehr großen Datenmengen trainiert."
+        }
+      ]
+    },
+    {
+      "id": "mc-10",
+      "topic": "ki-daten",
+      "question": "Welche Zuordnung von Lernverfahren des maschinellen Lernens ist korrekt?",
+      "options": [
+        {
+          "text": "Überwachtes Lernen nutzt gelabelte Trainingsdaten",
+          "correct": true,
+          "explanation": "Richtig. Das Modell lernt den Zusammenhang zwischen Eingabe und vorgegebenem Zielwert."
+        },
+        {
+          "text": "Unüberwachtes Lernen sucht Strukturen wie Cluster ohne vorgegebene Zielwerte",
+          "correct": true,
+          "explanation": "Richtig. Typische Verfahren sind Clustering und Dimensionsreduktion."
+        },
+        {
+          "text": "Bestärkendes Lernen optimiert eine Strategie über Belohnungssignale",
+          "correct": true,
+          "explanation": "Richtig. Ein Agent lernt durch Rückmeldung aus der Umgebung, etwa bei Robotersteuerung."
+        },
+        {
+          "text": "Clustering ist ein Beispiel für überwachtes Lernen",
+          "correct": false,
+          "explanation": "Falsch. Clustering bildet Gruppen ohne vorgegebene Zielkategorien und gehört damit zum unüberwachten Lernen."
+        },
+        {
+          "text": "Testdaten dürfen zur Anpassung der Modellgewichte verwendet werden",
+          "correct": false,
+          "explanation": "Falsch. Testdaten dienen ausschließlich der abschließenden, unabhängigen Bewertung. Andernfalls wird die gemessene Güte zu optimistisch."
+        }
+      ]
+    },
+    {
+      "id": "mc-11",
+      "topic": "ki-daten",
+      "question": "Ein Unternehmen stellt fest, dass sein Prognosemodell im Betrieb deutlich schlechter arbeitet als im Test. Welche Ursachen und Gegenmaßnahmen sind plausibel?",
+      "options": [
+        {
+          "text": "Overfitting: Das Modell hat Zufallsmuster der Trainingsdaten mitgelernt",
+          "correct": true,
+          "explanation": "Richtig. Bei Overfitting ist die Leistung auf Trainingsdaten hoch, auf neuen Daten dagegen schwach."
+        },
+        {
+          "text": "Data Drift: Die Datenverteilung im Betrieb hat sich gegenüber dem Training verändert",
+          "correct": true,
+          "explanation": "Richtig. Verändern sich Prozesse, Materialien oder Sensorik, verliert das Modell seine Gültigkeit."
+        },
+        {
+          "text": "Unzureichende oder nicht repräsentative Trainingsdaten",
+          "correct": true,
+          "explanation": "Richtig. Datenqualität und Repräsentativität bestimmen die Übertragbarkeit maßgeblich."
+        },
+        {
+          "text": "Laufendes Monitoring der Modellgüte im Produktivbetrieb ist eine geeignete Gegenmaßnahme",
+          "correct": true,
+          "explanation": "Richtig. Nur durch Überwachung lassen sich Güteverluste erkennen und ein Nachtrainieren auslösen."
+        },
+        {
+          "text": "Die Ursache liegt zwingend an zu geringer Rechenleistung",
+          "correct": false,
+          "explanation": "Falsch. Rechenleistung beeinflusst die Trainingsdauer, erklärt aber keinen Güteverlust zwischen Test und Betrieb."
+        }
+      ]
+    },
+    {
+      "id": "mc-12",
+      "topic": "ki-daten",
+      "question": "Welche Anforderungen an Datenqualität sind für industrielle KI-Anwendungen zentral?",
+      "options": [
+        {
+          "text": "Vollständigkeit der erfassten Merkmale",
+          "correct": true,
+          "explanation": "Richtig. Lücken in den Daten schwächen die Aussagekraft des Modells."
+        },
+        {
+          "text": "Korrektheit und Konsistenz über Systemgrenzen hinweg",
+          "correct": true,
+          "explanation": "Richtig. Widersprüchliche Stammdaten in ERP und MES führen zu unbrauchbaren Auswertungen."
+        },
+        {
+          "text": "Aktualität der Daten",
+          "correct": true,
+          "explanation": "Richtig. Veraltete Zustandsdaten machen Echtzeitentscheidungen unmöglich."
+        },
+        {
+          "text": "Nachvollziehbare Herkunft und Dokumentation der Daten",
+          "correct": true,
+          "explanation": "Richtig. Data Lineage ist Voraussetzung für Fehlersuche, Audit und regulatorische Nachweise."
+        },
+        {
+          "text": "Möglichst große Datenmenge unabhängig von ihrer Qualität",
+          "correct": false,
+          "explanation": "Falsch. Menge ersetzt keine Qualität. Fehlerhafte Daten in großem Umfang verschlechtern das Ergebnis systematisch."
+        }
+      ]
+    },
+    {
+      "id": "mc-13",
+      "topic": "iot-vernetzung",
+      "question": "Welche Aussagen zu OPC UA sind zutreffend?",
+      "options": [
+        {
+          "text": "OPC UA ist in der Normenreihe IEC 62541 spezifiziert",
+          "correct": true,
+          "explanation": "Richtig. Die Spezifikationen der OPC Foundation wurden als IEC 62541 normiert."
+        },
+        {
+          "text": "OPC UA ist plattform- und herstellerunabhängig",
+          "correct": true,
+          "explanation": "Richtig. Die Abkehr von COM/DCOM ermöglichte die Unabhängigkeit von Betriebssystem und Hersteller."
+        },
+        {
+          "text": "OPC UA umfasst semantische Informationsmodellierung",
+          "correct": true,
+          "explanation": "Richtig. Daten werden nicht nur übertragen, sondern maschinenlesbar beschrieben. Das unterscheidet OPC UA von reinen Transportprotokollen."
+        },
+        {
+          "text": "OPC UA enthält Sicherheitsmechanismen wie Authentifizierung und Verschlüsselung",
+          "correct": true,
+          "explanation": "Richtig. Sicherheit war von Beginn an Bestandteil der Architektur, unter anderem über Signierung und Verschlüsselung."
+        },
+        {
+          "text": "OPC UA ist ein reines Feldbusprotokoll für harte Echtzeit",
+          "correct": false,
+          "explanation": "Falsch. OPC UA ersetzt bestehende Feldbusprotokolle nicht, sondern schafft einen zusätzlichen Kanal für Industrie-4.0-Dienste."
+        }
+      ]
+    },
+    {
+      "id": "mc-14",
+      "topic": "iot-vernetzung",
+      "question": "Wann ist Edge Computing gegenüber reiner Cloud-Verarbeitung vorzuziehen?",
+      "options": [
+        {
+          "text": "Bei harten Latenzanforderungen, etwa in der Prozessregelung",
+          "correct": true,
+          "explanation": "Richtig. Die Signallaufzeit zur Cloud und zurück ist für schnelle Regelkreise häufig zu lang."
+        },
+        {
+          "text": "Wenn große Datenmengen anfallen und die Bandbreite begrenzt ist",
+          "correct": true,
+          "explanation": "Richtig. Vorverarbeitung am Rand reduziert das zu übertragende Datenvolumen erheblich."
+        },
+        {
+          "text": "Wenn Daten aus Datenschutz- oder Geheimhaltungsgründen lokal bleiben sollen",
+          "correct": true,
+          "explanation": "Richtig. Lokale Verarbeitung begrenzt den Abfluss sensibler Daten und erleichtert die Rechtskonformität."
+        },
+        {
+          "text": "Wenn die Anlage zeitweise ohne Netzverbindung arbeiten muss",
+          "correct": true,
+          "explanation": "Richtig. Edge-Systeme bleiben auch bei unterbrochener Verbindung handlungsfähig."
+        },
+        {
+          "text": "Immer, weil Cloud-Verarbeitung technisch überholt ist",
+          "correct": false,
+          "explanation": "Falsch. Cloud und Edge ergänzen sich. Modelltraining, langfristige Datenhaltung und standortübergreifende Auswertung bleiben Cloud-Domänen."
+        }
+      ]
+    },
+    {
+      "id": "mc-15",
+      "topic": "iot-vernetzung",
+      "question": "Was kennzeichnet datenbasierte Smart Services?",
+      "options": [
+        {
+          "text": "Sie beruhen auf Daten vernetzter Produkte oder Anlagen",
+          "correct": true,
+          "explanation": "Richtig. Ohne Konnektivität und Datenerfassung gibt es keine Grundlage für den Dienst."
+        },
+        {
+          "text": "Sie ermöglichen nutzungsabhängige Abrechnungsmodelle statt reinem Produktverkauf",
+          "correct": true,
+          "explanation": "Richtig. Modelle wie Pay-per-Use oder Verfügbarkeitsgarantien verlagern den Wert vom Produkt zum Ergebnis."
+        },
+        {
+          "text": "Sie erlauben Fernwartung und vorausschauende Instandhaltung",
+          "correct": true,
+          "explanation": "Richtig. Zustandsdaten aus dem Feld sind die Basis für Ferndiagnose und Prognose."
+        },
+        {
+          "text": "Sie sind ausschließlich für Konsumgüter relevant",
+          "correct": false,
+          "explanation": "Falsch. Gerade im Maschinen- und Anlagenbau sind Smart Services ein zentrales Geschäftsmodellfeld."
+        },
+        {
+          "text": "Sie erfordern keine vertragliche Regelung der Datennutzung",
+          "correct": false,
+          "explanation": "Falsch. Datenzugriff, Nutzungsrechte und Verantwortlichkeiten müssen vertraglich geklärt werden."
+        }
+      ]
+    },
+    {
+      "id": "mc-16",
+      "topic": "iot-vernetzung",
+      "question": "Welche Aussagen zum Einsatz von Blockchain in der Lieferkette treffen zu?",
+      "options": [
+        {
+          "text": "Blockchain erlaubt eine manipulationssichere, nachvollziehbare Dokumentation von Transaktionen",
+          "correct": true,
+          "explanation": "Richtig. Die verkettete, verteilte Speicherung erschwert nachträgliche Veränderungen erheblich."
+        },
+        {
+          "text": "Smart Contracts können vereinbarte Abläufe automatisch auslösen",
+          "correct": true,
+          "explanation": "Richtig. Bei Eintritt definierter Bedingungen werden Aktionen wie Freigaben oder Zahlungen automatisch ausgeführt."
+        },
+        {
+          "text": "Blockchain garantiert, dass die eingetragenen Daten inhaltlich wahr sind",
+          "correct": false,
+          "explanation": "Falsch. Die Technologie sichert die Unveränderbarkeit nach der Eintragung, nicht die Richtigkeit der Eingabe. Das Problem der Ersteingabe bleibt bestehen."
+        },
+        {
+          "text": "Blockchain ist ausschließlich für Finanzanwendungen geeignet",
+          "correct": false,
+          "explanation": "Falsch. Rückverfolgbarkeit von Materialien, Herkunftsnachweise und Zertifikatsmanagement sind etablierte industrielle Anwendungsfelder."
+        },
+        {
+          "text": "Der Einsatz erfordert die Abstimmung mehrerer Partner in der Kette",
+          "correct": true,
+          "explanation": "Richtig. Der Nutzen entsteht erst, wenn die relevanten Akteure der Lieferkette gemeinsam teilnehmen."
+        }
+      ]
+    },
+    {
+      "id": "mc-17",
+      "topic": "recht",
+      "question": "Welche Risikokategorien unterscheidet der EU AI Act?",
+      "options": [
+        {
+          "text": "Verbotene Praktiken, etwa Social Scoring durch Behörden",
+          "correct": true,
+          "explanation": "Richtig. Artikel 5 listet unannehmbare Praktiken, die untersagt sind."
+        },
+        {
+          "text": "Hochrisiko-KI, etwa in Personalauswahl oder Kreditvergabe",
+          "correct": true,
+          "explanation": "Richtig. Für Hochrisikosysteme gelten umfangreiche Anforderungen an Risikomanagement, Daten, Dokumentation und Aufsicht."
+        },
+        {
+          "text": "KI mit Transparenzpflichten, etwa Chatbots und Deepfakes",
+          "correct": true,
+          "explanation": "Richtig. Diese Systeme unterliegen den Offenlegungspflichten des Artikel 50."
+        },
+        {
+          "text": "KI mit minimalem Risiko ohne besondere Pflichten",
+          "correct": true,
+          "explanation": "Richtig. Der weitaus größte Teil der Anwendungen fällt in diese Kategorie."
+        },
+        {
+          "text": "Kostenlose KI-Systeme als eigene Risikoklasse",
+          "correct": false,
+          "explanation": "Falsch. Der Preis eines Systems ist für die Einstufung ohne Bedeutung. Maßgeblich ist der Verwendungszweck."
+        }
+      ]
+    },
+    {
+      "id": "mc-18",
+      "topic": "recht",
+      "question": "Was regelt Artikel 50 des EU AI Act?",
+      "options": [
+        {
+          "text": "Die Offenlegung, dass eine Person mit einem KI-System interagiert",
+          "correct": true,
+          "explanation": "Richtig. Nutzer müssen erkennen können, dass ihr Gegenüber kein Mensch ist, sofern dies nicht offensichtlich ist."
+        },
+        {
+          "text": "Die maschinenlesbare Kennzeichnung KI-generierter oder manipulierter Inhalte",
+          "correct": true,
+          "explanation": "Richtig. Anbieter müssen synthetische Inhalte erkennbar machen, etwa über Wasserzeichen oder Metadaten."
+        },
+        {
+          "text": "Die Kennzeichnungspflicht bei Deepfakes und bei Emotionserkennung",
+          "correct": true,
+          "explanation": "Richtig. Betreiber müssen offenlegen, wenn Inhalte künstlich erzeugt wurden oder Emotionserkennung eingesetzt wird."
+        },
+        {
+          "text": "Die Pflicht zur Veröffentlichung einer Zusammenfassung der Trainingsdaten",
+          "correct": false,
+          "explanation": "Falsch. Diese Pflicht ergibt sich aus Artikel 53 in Verbindung mit den Anhängen XI und XII und betrifft Anbieter von KI-Modellen mit allgemeinem Verwendungszweck, nicht Artikel 50."
+        },
+        {
+          "text": "Ein generelles Verbot generativer KI",
+          "correct": false,
+          "explanation": "Falsch. Artikel 50 schafft Transparenz, spricht aber kein Verbot aus."
+        }
+      ]
+    },
+    {
+      "id": "mc-19",
+      "topic": "recht",
+      "question": "Ein Unternehmen führt ein externes KI-System ein, das personenbezogene Beschäftigtendaten verarbeitet. Welche Schritte sind erforderlich?",
+      "options": [
+        {
+          "text": "Abschluss eines Auftragsverarbeitungsvertrags mit dem Anbieter",
+          "correct": true,
+          "explanation": "Richtig. Artikel 28 DSGVO verlangt einen Vertrag, wenn ein Dienstleister personenbezogene Daten weisungsgebunden verarbeitet."
+        },
+        {
+          "text": "Prüfung, ob eine Datenschutz-Folgenabschätzung nach Artikel 35 DSGVO erforderlich ist",
+          "correct": true,
+          "explanation": "Richtig. Bei voraussichtlich hohem Risiko, etwa durch systematische Bewertung von Beschäftigten, ist eine DSFA durchzuführen."
+        },
+        {
+          "text": "Beteiligung des Betriebsrats nach § 87 Absatz 1 Nummer 6 BetrVG, sofern das System zur Überwachung geeignet ist",
+          "correct": true,
+          "explanation": "Richtig. Die objektive Eignung zur Verhaltens- oder Leistungskontrolle löst die Mitbestimmung aus."
+        },
+        {
+          "text": "Klärung des Speicherorts und der Rechtsgrundlage bei Drittlandtransfer",
+          "correct": true,
+          "explanation": "Richtig. Für Übermittlungen in Drittländer ist ein gültiger Übermittlungsrahmen erforderlich."
+        },
+        {
+          "text": "Ein Verzicht auf Prüfungen ist zulässig, wenn der Anbieter marktführend ist",
+          "correct": false,
+          "explanation": "Falsch. Marktstellung oder Bekanntheit ersetzen keine Prüfung. Die Verantwortung verbleibt beim einsetzenden Unternehmen."
+        }
+      ]
+    },
+    {
+      "id": "mc-20",
+      "topic": "recht",
+      "question": "Welche Pflichten ergeben sich aus dem deutschen NIS-2-Umsetzungsgesetz?",
+      "options": [
+        {
+          "text": "Registrierung betroffener Einrichtungen beim BSI",
+          "correct": true,
+          "explanation": "Richtig. Betroffene Einrichtungen müssen sich beim BSI registrieren; das Portal wurde Anfang 2026 freigeschaltet."
+        },
+        {
+          "text": "Meldung erheblicher Sicherheitsvorfälle an das BSI innerhalb kurzer Fristen",
+          "correct": true,
+          "explanation": "Richtig. Vorgesehen ist eine gestufte Meldung: Frühwarnung innerhalb von 24 Stunden, Meldung nach 72 Stunden, Abschlussbericht nach einem Monat."
+        },
+        {
+          "text": "Umsetzung und Dokumentation von Risikomanagementmaßnahmen",
+          "correct": true,
+          "explanation": "Richtig. Dazu zählen unter anderem Risikoanalyse, Backup-Management, Lieferkettensicherheit und Mehrfaktor-Authentifizierung."
+        },
+        {
+          "text": "Verantwortung und persönliche Haftung der Geschäftsleitung",
+          "correct": true,
+          "explanation": "Richtig. Das Gesetz verankert die Verantwortung der Leitungsorgane für Billigung und Überwachung der Maßnahmen ausdrücklich."
+        },
+        {
+          "text": "Eine allgemeine Übergangsfrist von drei Jahren zur Umsetzung",
+          "correct": false,
+          "explanation": "Falsch. Das Gesetz sieht keine allgemeine Übergangsfrist vor; die Pflichten gelten seit Inkrafttreten am 6. Dezember 2025."
+        }
+      ]
+    },
+    {
+      "id": "mc-21",
+      "topic": "recht",
+      "question": "Welche Betroffenenrechte gewährt die DSGVO?",
+      "options": [
+        {
+          "text": "Recht auf Auskunft über die verarbeiteten Daten",
+          "correct": true,
+          "explanation": "Richtig. Artikel 15 DSGVO. Das Auskunftsrecht ist Voraussetzung für die Ausübung weiterer Rechte."
+        },
+        {
+          "text": "Recht auf Berichtigung unrichtiger Daten",
+          "correct": true,
+          "explanation": "Richtig. Artikel 16 DSGVO."
+        },
+        {
+          "text": "Recht auf Löschung unter bestimmten Voraussetzungen",
+          "correct": true,
+          "explanation": "Richtig. Artikel 17 DSGVO, auch als Recht auf Vergessenwerden bezeichnet. Es gilt nicht unbeschränkt, etwa bei gesetzlichen Aufbewahrungspflichten."
+        },
+        {
+          "text": "Recht auf Datenübertragbarkeit",
+          "correct": true,
+          "explanation": "Richtig. Artikel 20 DSGVO ermöglicht die Herausgabe der Daten in einem strukturierten, gängigen Format."
+        },
+        {
+          "text": "Recht auf unbegrenzte kostenlose Kopien aller Daten in beliebiger Häufigkeit",
+          "correct": false,
+          "explanation": "Falsch. Die erste Kopie ist unentgeltlich; für weitere Kopien darf ein angemessenes Entgelt verlangt werden. Bei exzessiven Anträgen bestehen weitere Einschränkungen."
+        }
+      ]
+    },
+    {
+      "id": "mc-22",
+      "topic": "ethik-mensch",
+      "question": "Wie lässt sich Fairness bei KI-Systemen im Unternehmen fördern?",
+      "options": [
+        {
+          "text": "Prüfung der Trainingsdaten auf systematische Verzerrungen",
+          "correct": true,
+          "explanation": "Richtig. Bias entsteht häufig bereits in den Daten, etwa durch historisch ungleiche Entscheidungen."
+        },
+        {
+          "text": "Laufendes Monitoring der Ergebnisse über verschiedene Gruppen hinweg",
+          "correct": true,
+          "explanation": "Richtig. Nur der Vergleich der Ergebnisqualität über Gruppen zeigt Benachteiligungen auf."
+        },
+        {
+          "text": "Nachvollziehbare Dokumentation der Entscheidungslogik",
+          "correct": true,
+          "explanation": "Richtig. Ohne Transparenz lässt sich weder prüfen noch begründen, wie eine Entscheidung zustande kam."
+        },
+        {
+          "text": "Menschliche Aufsicht bei Entscheidungen mit erheblicher Tragweite",
+          "correct": true,
+          "explanation": "Richtig. Human Oversight ist zugleich ethische Anforderung und Vorgabe des AI Act für Hochrisikosysteme."
+        },
+        {
+          "text": "Der Verzicht auf jede Auswertung, weil Algorithmen ohnehin neutral sind",
+          "correct": false,
+          "explanation": "Falsch. Die Annahme algorithmischer Neutralität ist ein verbreiteter Trugschluss."
+        }
+      ]
+    },
+    {
+      "id": "mc-23",
+      "topic": "ethik-mensch",
+      "question": "Ein Produktionsbetrieb führt ein System ein, das Taktzeiten je Arbeitsplatz erfasst und auswertet. Was ist zu beachten?",
+      "options": [
+        {
+          "text": "Das Mitbestimmungsrecht des Betriebsrats nach § 87 Absatz 1 Nummer 6 BetrVG greift",
+          "correct": true,
+          "explanation": "Richtig. Das System ist objektiv geeignet, Leistung zu überwachen. Eine Überwachungsabsicht ist nach der Rechtsprechung nicht erforderlich."
+        },
+        {
+          "text": "Eine Betriebsvereinbarung kann Zweck, Umfang und Auswertung verbindlich regeln",
+          "correct": true,
+          "explanation": "Richtig. Sie ist das übliche Instrument, um Mitbestimmung auszuüben und Rechtssicherheit zu schaffen."
+        },
+        {
+          "text": "Die Grundsätze der Datenminimierung und Zweckbindung sind einzuhalten",
+          "correct": true,
+          "explanation": "Richtig. Artikel 5 DSGVO begrenzt Umfang und Verwendung personenbezogener Daten."
+        },
+        {
+          "text": "Die Mitbestimmung entfällt, wenn die Auswertung nur anlassbezogen erfolgt",
+          "correct": false,
+          "explanation": "Falsch. Bereits die Einführung einer zur Überwachung geeigneten Einrichtung ist mitbestimmungspflichtig, unabhängig von der Nutzungshäufigkeit."
+        },
+        {
+          "text": "Transparente Information der Beschäftigten fördert Akzeptanz und ist rechtlich geboten",
+          "correct": true,
+          "explanation": "Richtig. Die Informationspflichten nach Artikel 13 DSGVO gelten, und Transparenz senkt zugleich den Widerstand."
+        }
+      ]
+    },
+    {
+      "id": "mc-24",
+      "topic": "ethik-mensch",
+      "question": "Wie unterscheiden sich Upskilling und Reskilling, und wann setzt man sie ein?",
+      "options": [
+        {
+          "text": "Upskilling erweitert Kompetenzen für die bestehende Rolle",
+          "correct": true,
+          "explanation": "Richtig. Beispiel: Eine Instandhalterin lernt die Auswertung von Zustandsdaten für ihre vorhandene Aufgabe."
+        },
+        {
+          "text": "Reskilling qualifiziert für eine andere Tätigkeit",
+          "correct": true,
+          "explanation": "Richtig. Beispiel: Umschulung, wenn eine Tätigkeit durch Automatisierung entfällt."
+        },
+        {
+          "text": "Beide Ansätze sind Bestandteil einer vorausschauenden Personalplanung",
+          "correct": true,
+          "explanation": "Richtig. Ein Kompetenzabgleich zwischen Ist und künftigem Bedarf steuert, welcher Weg jeweils passt."
+        },
+        {
+          "text": "Reskilling ist ausschließlich für IT-Beschäftigte relevant",
+          "correct": false,
+          "explanation": "Falsch. Reskilling betrifft alle Bereiche, in denen sich Tätigkeitsprofile grundlegend verändern."
+        },
+        {
+          "text": "Qualifizierung ist verzichtbar, wenn die Systeme ausreichend benutzerfreundlich sind",
+          "correct": false,
+          "explanation": "Falsch. Bedienbarkeit ersetzt weder Fachverständnis noch die Fähigkeit, Ergebnisse kritisch zu bewerten."
+        }
+      ]
+    },
+    {
+      "id": "mc-25",
+      "topic": "ethik-mensch",
+      "question": "Was kennzeichnet Digital Leadership im Kontext von Industrie 5.0?",
+      "options": [
+        {
+          "text": "Förderung von Eigenverantwortung und Selbstorganisation der Teams",
+          "correct": true,
+          "explanation": "Richtig. Dezentrale Entscheidungen setzen Vertrauen und klare Rahmenbedingungen voraus."
+        },
+        {
+          "text": "Transparente Kommunikation von Zielen und Veränderungsgründen",
+          "correct": true,
+          "explanation": "Richtig. Ohne verstandenes Warum entsteht keine tragfähige Veränderungsbereitschaft."
+        },
+        {
+          "text": "Aufbau einer Lern- und Fehlerkultur",
+          "correct": true,
+          "explanation": "Richtig. Iteratives Vorgehen funktioniert nur, wenn Fehler als Lernquelle und nicht als Verfehlung behandelt werden."
+        },
+        {
+          "text": "Engmaschige Kontrolle aller Arbeitsschritte über digitale Kennzahlen",
+          "correct": false,
+          "explanation": "Falsch. Permanente Kontrolle widerspricht dem Leitbild der Mensch-Zentrierung und untergräbt Vertrauen."
+        },
+        {
+          "text": "Vorbildfunktion im Umgang mit digitalen Werkzeugen",
+          "correct": true,
+          "explanation": "Richtig. Führungskräfte, die neue Werkzeuge selbst nutzen, erhöhen die Akzeptanz spürbar."
+        }
+      ]
+    },
+    {
+      "id": "mc-26",
+      "topic": "change",
+      "question": "Welche Aussagen zum ADKAR-Modell treffen zu?",
+      "options": [
+        {
+          "text": "Die fünf Elemente lauten Awareness, Desire, Knowledge, Ability, Reinforcement",
+          "correct": true,
+          "explanation": "Richtig. Das Modell wurde von Jeff Hiatt bei Prosci entwickelt."
+        },
+        {
+          "text": "Es beschreibt Veränderung auf der Ebene der einzelnen Person",
+          "correct": true,
+          "explanation": "Richtig. Organisationale Veränderung gelingt nach diesem Modell nur, wenn die einzelnen Betroffenen die fünf Stufen durchlaufen."
+        },
+        {
+          "text": "Reinforcement zielt darauf, das neue Verhalten dauerhaft zu verankern",
+          "correct": true,
+          "explanation": "Richtig. Ohne Verstetigung fallen Organisationen häufig in alte Muster zurück."
+        },
+        {
+          "text": "Automation ist das sechste Element des Modells",
+          "correct": false,
+          "explanation": "Falsch. Das Modell umfasst genau fünf Elemente; Automation gehört nicht dazu."
+        },
+        {
+          "text": "Awareness kann übersprungen werden, wenn die Führung entschieden hat",
+          "correct": false,
+          "explanation": "Falsch. Ohne Verständnis für den Anlass der Veränderung bleiben die folgenden Stufen wirkungslos."
+        }
+      ]
+    },
+    {
+      "id": "mc-27",
+      "topic": "change",
+      "question": "Welche Ursachen für Widerstand gegen digitale Transformation sind typisch?",
+      "options": [
+        {
+          "text": "Sorge um den Arbeitsplatz",
+          "correct": true,
+          "explanation": "Richtig. Automatisierung wird häufig zuerst als Bedrohung und nicht als Entlastung wahrgenommen."
+        },
+        {
+          "text": "Erlebter Kontroll- und Autonomieverlust",
+          "correct": true,
+          "explanation": "Richtig. Wenn Systeme Entscheidungen vorgeben, sinkt der wahrgenommene Handlungsspielraum."
+        },
+        {
+          "text": "Fehlende Kompetenz im Umgang mit neuen Werkzeugen",
+          "correct": true,
+          "explanation": "Richtig. Unsicherheit im Umgang mit Technik führt zu Vermeidung."
+        },
+        {
+          "text": "Unklare Kommunikation über Ziele und Auswirkungen",
+          "correct": true,
+          "explanation": "Richtig. Informationslücken werden mit Vermutungen gefüllt, meist zum Nachteil des Vorhabens."
+        },
+        {
+          "text": "Widerstand ist stets sachlich unbegründet und daher zu ignorieren",
+          "correct": false,
+          "explanation": "Falsch. Widerstand enthält oft wertvolle Hinweise auf reale Umsetzungsprobleme und sollte ausgewertet werden."
+        }
+      ]
+    },
+    {
+      "id": "mc-28",
+      "topic": "change",
+      "question": "Welche Aussagen zu klassischen Change-Modellen sind korrekt?",
+      "options": [
+        {
+          "text": "Lewin unterscheidet die drei Phasen Auftauen, Verändern und Einfrieren",
+          "correct": true,
+          "explanation": "Richtig. Das Modell beschreibt Veränderung als Lösen, Bewegen und erneutes Stabilisieren eines Gleichgewichts."
+        },
+        {
+          "text": "Kotter beschreibt einen mehrstufigen Prozess, der mit dem Erzeugen von Dringlichkeit beginnt",
+          "correct": true,
+          "explanation": "Richtig. Das Acht-Stufen-Modell von John P. Kotter startet mit der Etablierung eines Gefühls der Dringlichkeit."
+        },
+        {
+          "text": "Frühe Erfolge sichtbar zu machen, stärkt die Veränderungsbereitschaft",
+          "correct": true,
+          "explanation": "Richtig. Kurzfristige Erfolge liefern Belege für die Machbarkeit und binden Unentschlossene ein."
+        },
+        {
+          "text": "Change-Modelle machen eine Kommunikationsplanung entbehrlich",
+          "correct": false,
+          "explanation": "Falsch. Kommunikation ist in allen gängigen Modellen ein zentraler Baustein."
+        },
+        {
+          "text": "Nach Abschluss eines Projekts ist keine weitere Verankerung mehr nötig",
+          "correct": false,
+          "explanation": "Falsch. Ohne Verstetigung, etwa über Kennzahlen, Rollen und Routinen, verlaufen Veränderungen im Sande."
+        }
+      ]
+    },
+    {
+      "id": "mc-29",
+      "topic": "change",
+      "question": "Worin unterscheidet sich Change Management im Kontext von Industrie 5.0 vom Vorgehen unter Industrie 4.0?",
+      "options": [
+        {
+          "text": "Der Mensch rückt von der Anpassungsgröße zum Gestaltungsziel",
+          "correct": true,
+          "explanation": "Richtig. Unter Industrie 4.0 stand die Anpassung der Organisation an die Technik im Vordergrund; Industrie 5.0 kehrt die Blickrichtung um."
+        },
+        {
+          "text": "Wohlbefinden und psychosoziale Wirkungen werden ausdrücklich mitbetrachtet",
+          "correct": true,
+          "explanation": "Richtig. Der EU-Rahmen benennt das Wohl der Beschäftigten als Zielgröße der Produktion."
+        },
+        {
+          "text": "Resilienz der Organisation wird zu einem eigenen Gestaltungsziel",
+          "correct": true,
+          "explanation": "Richtig. Neben Effizienz tritt die Fähigkeit, Störungen zu verkraften, als gleichrangiges Ziel hinzu."
+        },
+        {
+          "text": "Technologie spielt unter Industrie 5.0 keine Rolle mehr",
+          "correct": false,
+          "explanation": "Falsch. Die Technologiebasis bleibt bestehen; sie wird lediglich anderen Zielen untergeordnet."
+        },
+        {
+          "text": "Beteiligung der Beschäftigten wird durch reine Top-down-Steuerung ersetzt",
+          "correct": false,
+          "explanation": "Falsch. Partizipation nimmt unter Industrie 5.0 zu, nicht ab."
+        }
+      ]
+    },
+    {
+      "id": "mc-30",
+      "topic": "prozesse-kpi",
+      "question": "Eine Anlage erreicht eine Verfügbarkeit von 90 Prozent, eine Leistung von 95 Prozent und eine Qualitätsrate von 98 Prozent. Was folgt daraus?",
+      "options": [
+        {
+          "text": "Die OEE beträgt rund 84 Prozent",
+          "correct": true,
+          "explanation": "Richtig. 0,90 × 0,95 × 0,98 ergibt etwa 0,838, also rund 84 Prozent."
+        },
+        {
+          "text": "Die OEE ergibt sich als Produkt der drei Faktoren",
+          "correct": true,
+          "explanation": "Richtig. OEE = Verfügbarkeit × Leistung × Qualität."
+        },
+        {
+          "text": "Die OEE beträgt rund 94 Prozent als Mittelwert der drei Werte",
+          "correct": false,
+          "explanation": "Falsch. Die OEE wird multiplikativ und nicht als Mittelwert gebildet."
+        },
+        {
+          "text": "Der größte Verbesserungshebel liegt hier bei der Verfügbarkeit",
+          "correct": true,
+          "explanation": "Richtig. Mit 90 Prozent ist die Verfügbarkeit der schwächste der drei Faktoren und wirkt damit am stärksten begrenzend."
+        },
+        {
+          "text": "Eine OEE über 100 Prozent ist bei sehr guter Auslastung erreichbar",
+          "correct": false,
+          "explanation": "Falsch. Alle drei Faktoren sind auf 100 Prozent begrenzt, folglich auch ihr Produkt."
+        }
+      ]
+    },
+    {
+      "id": "mc-31",
+      "topic": "prozesse-kpi",
+      "question": "Welche Zuordnung von Instandhaltungsstrategien ist korrekt?",
+      "options": [
+        {
+          "text": "Reaktiv: Instandsetzung erst nach dem Ausfall",
+          "correct": true,
+          "explanation": "Richtig. Diese Strategie verursacht ungeplante Stillstände, ist aber bei unkritischen Bauteilen wirtschaftlich vertretbar."
+        },
+        {
+          "text": "Präventiv: Wartung nach festen Zeit- oder Nutzungsintervallen",
+          "correct": true,
+          "explanation": "Richtig. Vorteil ist die Planbarkeit, Nachteil der Austausch noch funktionsfähiger Teile."
+        },
+        {
+          "text": "Zustandsbasiert: Eingriff bei Überschreiten definierter Grenzwerte",
+          "correct": true,
+          "explanation": "Richtig. Sensorik überwacht Zustandsgrößen wie Schwingung oder Temperatur gegen Schwellenwerte."
+        },
+        {
+          "text": "Prädiktiv: Eingriff auf Basis eines prognostizierten Ausfallzeitpunkts",
+          "correct": true,
+          "explanation": "Richtig. Aus Zustands- und Historiendaten wird die verbleibende Nutzungsdauer geschätzt."
+        },
+        {
+          "text": "Präventive Instandhaltung ist durch prädiktive Verfahren vollständig überholt",
+          "correct": false,
+          "explanation": "Falsch. Die Strategien werden nach Kritikalität und Wirtschaftlichkeit kombiniert; für viele Komponenten bleibt der feste Intervall die günstigste Lösung."
+        }
+      ]
+    },
+    {
+      "id": "mc-32",
+      "topic": "prozesse-kpi",
+      "question": "Wie verhalten sich Lean Production und Industrie 4.0 zueinander?",
+      "options": [
+        {
+          "text": "Stabile, verschwendungsarme Prozesse sind eine sinnvolle Grundlage für die Digitalisierung",
+          "correct": true,
+          "explanation": "Richtig. Wer instabile Prozesse digitalisiert, erhält vor allem schnellere Fehler."
+        },
+        {
+          "text": "Digitale Transparenz erleichtert das Erkennen von Verschwendung",
+          "correct": true,
+          "explanation": "Richtig. Echtzeitdaten machen Wartezeiten, Bestände und Nacharbeit sichtbar."
+        },
+        {
+          "text": "Beide Ansätze verfolgen das Ziel kontinuierlicher Verbesserung",
+          "correct": true,
+          "explanation": "Richtig. Kaizen und datengetriebene Optimierung ergänzen sich methodisch."
+        },
+        {
+          "text": "Lean gilt als überholt und wird durch Industrie 4.0 ersetzt",
+          "correct": false,
+          "explanation": "Falsch. In der Fachliteratur wird der kombinierte Ansatz, oft als Lean 4.0 bezeichnet, ausdrücklich empfohlen."
+        },
+        {
+          "text": "Industrie 4.0 macht die Betrachtung des Wertstroms überflüssig",
+          "correct": false,
+          "explanation": "Falsch. Die Wertstromanalyse bleibt das zentrale Werkzeug, um Digitalisierungsvorhaben dort anzusetzen, wo sie wirken."
+        }
+      ]
+    },
+    {
+      "id": "mc-33",
+      "topic": "strategie-reifegrad",
+      "question": "Welche Aussagen zum acatech Industrie 4.0 Maturity Index sind zutreffend?",
+      "options": [
+        {
+          "text": "Er unterscheidet die Gestaltungsfelder Ressourcen, Informationssysteme, Kultur und Organisationsstruktur",
+          "correct": true,
+          "explanation": "Richtig. Jedes Gestaltungsfeld ist mit zwei handlungsleitenden Prinzipien hinterlegt."
+        },
+        {
+          "text": "Er beschreibt sechs aufeinander aufbauende Entwicklungsstufen",
+          "correct": true,
+          "explanation": "Richtig. Die Stufen reichen von Computerisierung und Konnektivität über Sichtbarkeit, Transparenz und Prognosefähigkeit bis zur Adaptierbarkeit."
+        },
+        {
+          "text": "Er dient als Grundlage für die Ableitung einer unternehmensindividuellen Roadmap",
+          "correct": true,
+          "explanation": "Richtig. Der Index ist ausdrücklich als Orientierungsrahmen für die eigene Entwicklungsplanung angelegt."
+        },
+        {
+          "text": "Er betrachtet ausschließlich die technische Ausstattung",
+          "correct": false,
+          "explanation": "Falsch. Kultur und Organisationsstruktur sind zwei der vier Gestaltungsfelder und damit gleichrangig."
+        },
+        {
+          "text": "Er wurde von der Europäischen Kommission herausgegeben",
+          "correct": false,
+          "explanation": "Falsch. Herausgeber ist acatech, die Deutsche Akademie der Technikwissenschaften. Der Industrie-5.0-Rahmen stammt dagegen von der EU-Kommission."
+        }
+      ]
+    },
+    {
+      "id": "mc-34",
+      "topic": "strategie-reifegrad",
+      "question": "Wie ist das Referenzarchitekturmodell Industrie 4.0 (RAMI 4.0) aufgebaut?",
+      "options": [
+        {
+          "text": "Es ist dreidimensional und besteht aus den Achsen Layers, Life Cycle & Value Stream sowie Hierarchy Levels",
+          "correct": true,
+          "explanation": "Richtig. Diese drei Achsen sind die offiziellen Bezeichnungen nach DIN SPEC 91345 und dem ZVEI-Faktenblatt."
+        },
+        {
+          "text": "Die Layers-Achse umfasst sechs Schichten von Asset bis Business",
+          "correct": true,
+          "explanation": "Richtig. Die Schichten lauten Asset, Integration, Communication, Information, Functional und Business."
+        },
+        {
+          "text": "Die Achse Life Cycle & Value Stream unterscheidet Typ und Instanz",
+          "correct": true,
+          "explanation": "Richtig. Diese Achse beruht auf IEC 62890 und trennt die Entwicklung eines Produkttyps von der einzelnen gefertigten Instanz."
+        },
+        {
+          "text": "Die dritte Achse trägt die offizielle Bezeichnung Architekturhierarchie",
+          "correct": false,
+          "explanation": "Falsch. Dieser Begriff ist eine informelle Umschreibung. Die normativ korrekte Bezeichnung lautet Hierarchy Levels nach IEC 62264 und IEC 61512."
+        },
+        {
+          "text": "RAMI 4.0 ist ein verbindliches Gesetz",
+          "correct": false,
+          "explanation": "Falsch. Es handelt sich um ein Referenzmodell, dokumentiert als DIN SPEC 91345. Eine gesetzliche Verpflichtung besteht nicht."
+        }
+      ]
+    },
+    {
+      "id": "mc-35",
+      "topic": "strategie-reifegrad",
+      "question": "Ein mittelständischer Fertigungsbetrieb will ein Industrie-4.0-Vorhaben starten. Welches Vorgehen ist fachlich angemessen?",
+      "options": [
+        {
+          "text": "Zunächst Ausgangslage und Reifegrad systematisch bestimmen",
+          "correct": true,
+          "explanation": "Richtig. Ohne belastbares Bild der Ausgangslage lassen sich weder Ziele noch Aufwände realistisch festlegen."
+        },
+        {
+          "text": "Konkrete Anwendungsfälle mit erkennbarem Nutzen auswählen und priorisieren",
+          "correct": true,
+          "explanation": "Richtig. Der Nutzen und nicht die Technologie sollte die Auswahl bestimmen."
+        },
+        {
+          "text": "In überschaubaren Pilotprojekten beginnen und Erkenntnisse übertragen",
+          "correct": true,
+          "explanation": "Richtig. Pilotierung begrenzt das Risiko und liefert belastbare Erfahrungswerte für die Skalierung."
+        },
+        {
+          "text": "Qualifizierung und Beteiligung der Beschäftigten von Anfang an einplanen",
+          "correct": true,
+          "explanation": "Richtig. Fehlende Kompetenz und fehlende Akzeptanz sind häufige Ursachen für das Scheitern solcher Vorhaben."
+        },
+        {
+          "text": "Zuerst flächendeckend Technologie beschaffen und den Nutzen später klären",
+          "correct": false,
+          "explanation": "Falsch. Ein technikgetriebenes Vorgehen ohne Zielbild führt regelmäßig zu Insellösungen ohne messbaren Beitrag."
+        }
+      ]
+    },
+    {
+      "id": "mc-36",
+      "topic": "technologien",
+      "question": "Welche Aussagen treffen auf Cobots zu?",
+      "options": [
+        {
+          "text": "Cobots sind für die direkte Zusammenarbeit mit Menschen konzipiert",
+          "correct": true,
+          "explanation": "Richtig. Anders als konventionelle Industrieroboter teilen sie den Arbeitsraum mit Menschen, statt durch einen Schutzzaun von ihnen getrennt zu sein."
+        },
+        {
+          "text": "Cobots ermöglichen flexible, sichere Automatisierung",
+          "correct": true,
+          "explanation": "Richtig. Flexibler Einsatz und schnelle Umrüstung sind Kernmerkmale. Wichtig ist die Formulierung: Stünde hier „pauschal sicher“, wäre die Aussage falsch, denn Sicherheit entsteht erst im bewerteten Gesamtsystem."
+        },
+        {
+          "text": "Cobots eignen sich nur für abgeschottete Roboterzellen",
+          "correct": false,
+          "explanation": "Falsch. Das beschreibt den konventionellen Industrieroboter. Der gemeinsame Arbeitsraum ist gerade das Unterscheidungsmerkmal des Cobots."
+        },
+        {
+          "text": "Cobots sind große Roboter ohne Sicherheitsvorkehrungen",
+          "correct": false,
+          "explanation": "Falsch. Cobots sind Leichtbauroboter mit spezieller Sensorik. Jede Anwendung erfordert zudem eine Risikobeurteilung."
+        }
+      ]
+    },
+    {
+      "id": "mc-37",
+      "topic": "technologien",
+      "question": "Welche Betriebsart der Mensch-Roboter-Kollaboration beschreibt, dass der Roboter seine Kraft so begrenzt, dass bei Kontakt keine Verletzung entsteht?",
+      "options": [
+        {
+          "text": "Leistungs- und Kraftbegrenzung",
+          "correct": true,
+          "explanation": "Richtig. Sie ist der klassische Cobot-Einsatz und die einzige der vier Betriebsarten, die eine Berührung im Automatikbetrieb zulässt. Die Grenzwerte stehen in DIN ISO/TS 15066."
+        },
+        {
+          "text": "Überwachter Halt",
+          "correct": false,
+          "explanation": "Falsch. Hier stoppt der Roboter, sobald ein Mensch den Arbeitsbereich betritt. Mensch und Roboter arbeiten nie gleichzeitig am Werkstück."
+        },
+        {
+          "text": "Handführung",
+          "correct": false,
+          "explanation": "Falsch. Hier führt der Mensch den Roboter aktiv per Hand. Eine Kraftbegrenzung ist damit nicht beschrieben, und eine danebenstehende Person bleibt ungeschützt."
+        },
+        {
+          "text": "Geschwindigkeits- und Abstandsüberwachung",
+          "correct": false,
+          "explanation": "Falsch. Hier steuern Sensoren die Geschwindigkeit über den Abstand zum Menschen, bis hin zum Stillstand. Ein Kontakt ist nicht vorgesehen."
+        }
+      ]
+    },
+    {
+      "id": "mc-38",
+      "topic": "recht",
+      "question": "Welche Norm definiert die biomechanischen Belastungsgrenzen für die Mensch-Roboter-Kollaboration?",
+      "options": [
+        {
+          "text": "DIN ISO/TS 15066",
+          "correct": true,
+          "explanation": "Richtig. Die technische Spezifikation legt Kraft- und Druckgrenzwerte für verschiedene Körperregionen fest und ergänzt damit die Grundnorm DIN EN ISO 10218 für Industrieroboter."
+        },
+        {
+          "text": "IEC 62443",
+          "correct": false,
+          "explanation": "Falsch. Diese Normenreihe behandelt die Cybersicherheit industrieller Automatisierungs- und Steuerungssysteme, nicht die Arbeitssicherheit."
+        },
+        {
+          "text": "DIN EN ISO 9001",
+          "correct": false,
+          "explanation": "Falsch. Sie regelt Qualitätsmanagementsysteme und trifft keine Aussagen zu biomechanischen Grenzwerten."
+        },
+        {
+          "text": "RAMI 4.0",
+          "correct": false,
+          "explanation": "Falsch. RAMI 4.0 ist ein Referenzarchitekturmodell zur Einordnung von Industrie-4.0-Komponenten, keine Sicherheitsnorm."
+        }
+      ]
+    },
+    {
+      "id": "mc-39",
+      "topic": "recht",
+      "question": "Welche Aussage zu Cobots ist eine typische Prüfungsfalle, also sachlich falsch?",
+      "options": [
+        {
+          "text": "Cobots dürfen ohne Risikoanalyse immer ohne Schutzeinrichtung betrieben werden",
+          "correct": true,
+          "explanation": "Richtig, das ist die Falle. Die Aussage ist doppelt falsch: Die Risikobeurteilung ist nach Maschinenrichtlinie 2006/42/EG für jede Anwendung verpflichtend, und die Absolutformulierung „immer“ ist in Prüfungsfragen fast durchgängig ein Warnsignal."
+        },
+        {
+          "text": "Jede Cobot-Anwendung erfordert eine Risikobeurteilung",
+          "correct": false,
+          "explanation": "Das ist keine Falle, sondern sachlich richtig, ohne Ausnahme."
+        },
+        {
+          "text": "Cobots teilen den Arbeitsraum mit Menschen",
+          "correct": false,
+          "explanation": "Das ist keine Falle, sondern das definierende Merkmal eines Cobots."
+        },
+        {
+          "text": "Cobots können Beschäftigte ergonomisch entlasten",
+          "correct": false,
+          "explanation": "Das ist keine Falle, sondern der zentrale Nutzen im Sinne der Menschzentrierung der Industrie 5.0."
+        }
+      ]
+    },
+    {
+      "id": "mc-40",
+      "topic": "technologien",
+      "question": "Welche Unterschiede zwischen additiver Fertigung und herkömmlichen Verfahren sind korrekt?",
+      "options": [
+        {
+          "text": "Bauteile werden schichtweise direkt aus digitalen 3D-Modellen aufgebaut",
+          "correct": true,
+          "explanation": "Richtig. Das ist der Paradigmenwechsel gegenüber subtraktiver Fertigung (Material wird abgetragen) und formativer Fertigung (Material wird umgeformt)."
+        },
+        {
+          "text": "Komplexe Geometrien lassen sich ohne Werkzeuge fertigen",
+          "correct": true,
+          "explanation": "Richtig. Es sind keine bauteilspezifischen Formen oder Vorrichtungen nötig, wodurch auch Hinterschneidungen und innenliegende Strukturen möglich werden."
+        },
+        {
+          "text": "Additive Fertigung ist für kostengünstige Massenproduktion geeignet",
+          "correct": false,
+          "explanation": "Falsch. Bei hohen Stückzahlen liegen die Stückkosten in der Regel über denen konventioneller Verfahren. Die Stärke liegt bei Einzelstücken und Kleinserien."
+        },
+        {
+          "text": "Additive Fertigung erzeugt mehr Materialabfall als subtraktive Verfahren",
+          "correct": false,
+          "explanation": "Falsch. Material wird nur dort aufgetragen, wo das Modell es vorsieht. Die Materialeffizienz ist gerade ein Hauptargument."
+        }
+      ]
+    },
+    {
+      "id": "mc-41",
+      "topic": "technologien",
+      "question": "Welche Begriffe gehören zu den Schlüsseltechnologien der Industrie 4.0?",
+      "options": [
+        {
+          "text": "Big Data",
+          "correct": true,
+          "explanation": "Richtig. Gemeint ist die Auswertung großer Datenmengen und die Ableitung von Entscheidungen daraus. Daten und Digitalisierung sind dabei die Voraussetzung, Big Data der darauf aufbauende Analyseschritt."
+        },
+        {
+          "text": "Internet der Dinge (IoT)",
+          "correct": true,
+          "explanation": "Richtig. Die Ausstattung von Maschinen und Werkstücken mit Sensorik und Konnektivität ist die Grundlage der intelligenten Vernetzung."
+        },
+        {
+          "text": "Additive Fertigung",
+          "correct": true,
+          "explanation": "Richtig. Der 3D-Druck zählt neben Big Data, IoT und kollaborativer Robotik zu den Schlüsseltechnologien."
+        },
+        {
+          "text": "Lean Production",
+          "correct": false,
+          "explanation": "Falsch. Lean Production ist ein Organisations- und Managementansatz aus der Zeit vor Industrie 4.0 und keine Technologie. Er lässt sich mit Industrie 4.0 verbinden, gehört aber nicht zu deren Schlüsseltechnologien."
+        }
+      ]
+    },
+    {
+      "id": "mc-42",
+      "topic": "technologien",
+      "question": "Warum wird additive Fertigung im Kontext von Industrie 5.0 als relevant betrachtet?",
+      "options": [
+        {
+          "text": "Wegen Materialeffizienz und dezentraler Fertigung",
+          "correct": true,
+          "explanation": "Richtig. Die Materialeffizienz zahlt auf das Ziel Nachhaltigkeit ein, die dezentrale Fertigung auf das Ziel Resilienz, weil sie die Abhängigkeit von Lieferketten verringert."
+        },
+        {
+          "text": "Weil sie ausschließlich für Massenproduktion taugt",
+          "correct": false,
+          "explanation": "Falsch. Der Nutzen liegt gerade bei Individualisierung und Losgröße 1, nicht bei hohen Stückzahlen."
+        },
+        {
+          "text": "Weil dafür keine digitalen Daten nötig sind",
+          "correct": false,
+          "explanation": "Falsch. Ein digitales 3D-Modell ist zwingende Voraussetzung, es ist zugleich der digitale Zwilling des Bauteils."
+        },
+        {
+          "text": "Weil sie manuelle Arbeit vollständig ersetzt",
+          "correct": false,
+          "explanation": "Falsch. Nachbearbeitung, Konstruktion und Qualitätsprüfung bleiben menschliche Aufgaben. Die Absolutformulierung „vollständig“ ist zusätzlich ein Warnsignal."
+        }
+      ]
+    },
+    {
+      "id": "mc-43",
+      "topic": "technologien",
+      "question": "Welcher Vorteil der additiven Fertigung ist für individualisierte Produkte (Losgröße 1) besonders relevant?",
+      "options": [
+        {
+          "text": "Es sind keine Werkzeuge und Formen nötig",
+          "correct": true,
+          "explanation": "Richtig. Ohne bauteilspezifische Form entfallen die Fixkosten, die Einzelstücke sonst unwirtschaftlich machen. Genau das macht Losgröße 1 wirtschaftlich."
+        },
+        {
+          "text": "Niedrige Energiekosten",
+          "correct": false,
+          "explanation": "Falsch. Der Energiebedarf ist je nach Verfahren erheblich, insbesondere beim Aufschmelzen von Metallpulver."
+        },
+        {
+          "text": "Höhere Geschwindigkeit als Spritzguss",
+          "correct": false,
+          "explanation": "Falsch. Der Druck eines einzelnen Bauteils dauert Stunden. Spritzguss ist pro Teil deutlich schneller, benötigt aber ein Werkzeug."
+        },
+        {
+          "text": "Automatische Zertifizierung des Bauteils",
+          "correct": false,
+          "explanation": "Falsch. Eine Zertifizierung ergibt sich nie aus dem Fertigungsverfahren, sie ist ein eigener Nachweisprozess."
+        }
+      ]
+    }
+  ]
+}

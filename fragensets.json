@@ -9,6 +9,11 @@
       "id": "ki-manager-ihk-stil-2026",
       "file": "fragenset-ki-manager-ihk-stil.json",
       "label": "KI-Manager (IHK) · Übungsset im IHK-Stil"
+    },
+    {
+      "id": "transformation-expert-industrie-40-50-tuev-v2",
+      "file": "fragenset-transformation-expert-industrie-40-50.json",
+      "label": "Transformation Expert Industrie 4.0/5.0 · TÜV Rheinland"
     }
   ]
 }
