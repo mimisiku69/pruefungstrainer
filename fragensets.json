@@ -1,0 +1,14 @@
+{
+  "sets": [
+    {
+      "id": "ki-transformationsmanager-2026",
+      "file": "fragenset-ki-transformationsmanager.json",
+      "label": "Manager:in für angewandte KI-Transformation"
+    },
+    {
+      "id": "ki-manager-ihk-stil-2026",
+      "file": "fragenset-ki-manager-ihk-stil.json",
+      "label": "KI-Manager (IHK) · Übungsset im IHK-Stil"
+    }
+  ]
+}

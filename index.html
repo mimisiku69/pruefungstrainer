@@ -127,6 +127,7 @@ footer.bottom a:hover,footer.bottom a:focus-visible{text-decoration:underline}
   <label for="setSelect">Fragenset:</label>
   <select id="setSelect" onchange="store.switchSet(this.value)"></select>
   <button class="linklike" onclick="document.getElementById('importFile').click()">JSON importieren</button>
+  <button class="linklike" onclick="store.exportCurrent()">JSON exportieren</button>
   <input type="file" id="importFile" accept=".json,application/json" class="visually-hidden" onchange="store.importFile(this)">
 </div>
 <main id="main"></main>
@@ -2340,13 +2341,15 @@ const store = (() => {
   const set = (k,v) => { try { if (canLS) localStorage.setItem(k, JSON.stringify(v)); else mem[k]=v; } catch(e){ mem[k]=v; } };
   const del = k => { try { if (canLS) localStorage.removeItem(k); else delete mem[k]; } catch(e){ delete mem[k]; } };
 
-  let sets = get("pt_sets") || {};
-  if (!sets[DEFAULT_SET.id]) { sets[DEFAULT_SET.id] = DEFAULT_SET; set("pt_sets", sets); }
-  else { sets[DEFAULT_SET.id] = DEFAULT_SET; } // eingebettetes Set immer aktuell halten
+  /* Lokal importierte Sets - liegen nur in diesem Browser */
+  let local = get("pt_sets") || {};
+  delete local[DEFAULT_SET.id];              // Altlast fruherer Versionen
+  /* Im Repo hinterlegte Sets - fuer alle Besucher, beschrieben in fragensets.json */
+  let catalog = [];
+  const remote = {};                         // nachgeladene Sets, nur im Arbeitsspeicher
   let currentId = get("pt_current") || DEFAULT_SET.id;
-  if (!sets[currentId]) currentId = DEFAULT_SET.id;
 
-  function cur(){ return sets[currentId]; }
+  function cur(){ return remote[currentId] || local[currentId] || DEFAULT_SET; }
   function progKey(){ return "pt_prog_" + currentId; }
   function prog(){ return get(progKey()) || { items:{}, answers:0, correct:0 }; }
   function saveProg(p){ set(progKey(), p); }
@@ -2383,27 +2386,90 @@ const store = (() => {
       let s; try { s = JSON.parse(r.result); } catch(e){ alert("Die Datei ist kein gültiges JSON: " + e.message); input.value=""; return; }
       const err = validateSet(s);
       if (err) { alert("Import abgelehnt: " + err); input.value=""; return; }
-      sets[s.id] = s; set("pt_sets", sets);
+      local[s.id] = s; set("pt_sets", local);
       currentId = s.id; set("pt_current", currentId);
       input.value = "";
       renderSetSelect(); ui.applySetHeader(); ui.showTab("training");
-      alert("Fragenset „" + s.title + "“ importiert und aktiviert.");
+      alert("Fragenset „" + s.title + "“ importiert und aktiviert.\n\nHinweis: Es liegt nur in diesem Browser. Damit alle Nutzenden es sehen, muss es ins Repo.");
     };
     r.readAsText(f);
   }
-  function switchSet(id){ if (sets[id]) { currentId = id; set("pt_current", id); ui.applySetHeader(); ui.showTab("training"); } }
-  function deleteSet(id){
-    if (id === DEFAULT_SET.id) { alert("Das eingebaute Demo-Set kann nicht gelöscht werden."); return; }
-    if (!confirm("Fragenset und zugehörigen Lernstand löschen?")) return;
-    delete sets[id]; set("pt_sets", sets); del("pt_prog_"+id);
-    if (currentId === id) currentId = DEFAULT_SET.id; set("pt_current", currentId);
+
+  /* ---------- Fragensets aus dem Repo (fragensets.json) ---------- */
+  function entry(id){ return catalog.find(e => e.id === id) || null; }
+  function label(id){
+    const e = entry(id), s = remote[id] || local[id];
+    return (e && e.label) || (s && (s.subtitle || s.title)) || id;
+  }
+  async function ensure(id){
+    if (remote[id] || local[id]) return true;
+    const e = entry(id);
+    if (!e || !e.file) return false;
+    try {
+      const r = await fetch(e.file, { cache: "no-cache" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      const s = await r.json();
+      const err = validateSet(s);
+      if (err) throw new Error(err);
+      remote[id] = s;
+      return true;
+    } catch(err){
+      alert("Fragenset „" + (e.label || id) + "“ konnte nicht geladen werden: " + err.message);
+      return false;
+    }
+  }
+  async function init(){
+    try {
+      const r = await fetch("fragensets.json", { cache: "no-cache" });
+      if (r.ok) {
+        const j = await r.json();
+        if (Array.isArray(j.sets)) catalog = j.sets.filter(e => e && e.id && e.file);
+      }
+    } catch(e){ /* offline oder per file:// geoeffnet - eingebettetes Set traegt weiter */ }
+    if (!catalog.length) {
+      remote[DEFAULT_SET.id] = DEFAULT_SET;
+      catalog = [{ id: DEFAULT_SET.id, label: DEFAULT_SET.subtitle || DEFAULT_SET.title }];
+    }
+    if (!entry(currentId) && !local[currentId]) currentId = catalog[0].id;
+    await ensure(currentId);
+    if (!remote[currentId] && !local[currentId]) { remote[DEFAULT_SET.id] = DEFAULT_SET; currentId = DEFAULT_SET.id; }
+    set("pt_current", currentId);
     renderSetSelect(); ui.applySetHeader(); ui.showTab("training");
+  }
+  async function switchSet(id){
+    if (id === currentId) return;
+    if (!(await ensure(id))) { renderSetSelect(); return; }
+    currentId = id; set("pt_current", id);
+    renderSetSelect(); ui.applySetHeader(); ui.showTab("training");
+  }
+  function deleteSet(id){
+    if (!local[id]) { alert("Nur selbst importierte Fragensets können hier gelöscht werden."); return; }
+    if (!confirm("Fragenset und zugehörigen Lernstand löschen?")) return;
+    delete local[id]; set("pt_sets", local); del("pt_prog_"+id);
+    if (currentId !== id) { renderSetSelect(); return; }
+    currentId = catalog[0] ? catalog[0].id : DEFAULT_SET.id;
+    set("pt_current", currentId);
+    ensure(currentId).then(() => { renderSetSelect(); ui.applySetHeader(); ui.showTab("training"); });
+  }
+  function exportCurrent(){
+    const s = cur();
+    const blob = new Blob([JSON.stringify(s, null, 1)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "fragenset-" + (s.id || "export") + ".json";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   }
   function renderSetSelect(){
     const sel = document.getElementById("setSelect");
-    sel.innerHTML = Object.values(sets).map(s => `<option value="${s.id}" ${s.id===currentId?"selected":""}>${esc(s.subtitle || s.title)}</option>`).join("");
+    const opts = catalog.map(e => ({ id: e.id, name: label(e.id) }));
+    Object.values(local).forEach(s => {
+      if (!opts.some(o => o.id === s.id)) opts.push({ id: s.id, name: (s.subtitle || s.title) + " (importiert)" });
+    });
+    sel.innerHTML = opts.map(o => `<option value="${esc(o.id)}" ${o.id===currentId?"selected":""}>${esc(o.name)}</option>`).join("");
   }
-  return { cur, prog, record, resetProg, importFile, switchSet, deleteSet, renderSetSelect, get currentId(){ return currentId; } };
+  return { cur, prog, record, resetProg, importFile, switchSet, deleteSet, renderSetSelect,
+           exportCurrent, label, init, get currentId(){ return currentId; } };
 })();
 
 function esc(t){ const d=document.createElement("div"); d.textContent=t==null?"":String(t); return d.innerHTML; }
@@ -2418,9 +2484,9 @@ const ui = (() => {
   let timerInt = null;
 
   function applySetHeader(){
-    const s = store.cur();
-    document.getElementById("setSubtitle").textContent = s.subtitle || s.title;
-    document.title = (s.subtitle || s.title) + " · Prüfungstrainer";
+    const name = store.label(store.currentId);
+    document.getElementById("setSubtitle").textContent = name;
+    document.title = name + " · Prüfungstrainer";
   }
 
   function showTab(tab){
@@ -2761,9 +2827,7 @@ const ui = (() => {
            startExam, toggleOpt, checkExam, nextExam, confirmLeaveExam };
 })();
 
-store.renderSetSelect();
-ui.applySetHeader();
-ui.showTab("training");
+store.init();
 </script>
 </body>
 </html>
