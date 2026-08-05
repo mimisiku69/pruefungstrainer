@@ -103,4 +103,13 @@ Der Lernstand liegt im `localStorage` des jeweiligen Browsers, getrennt nach Fra
 | `index.html` | Die komplette App: Oberfläche, Logik, Styles |
 | `fragensets.json` | Manifest der im Repo verfügbaren Fragensets |
 | `fragenset-*.json` | Die Fragensets selbst |
+| `fonts/` | Schrift Arimo, lokal ausgeliefert |
 | `site.webmanifest`, `icon-*.png`, `apple-touch-icon.png` | Installierbarkeit auf dem Homescreen |
+
+## Schrift
+
+Arimo liegt unter `fonts/` im Repo und wird von dort ausgeliefert, nicht von Google. Damit gehen beim Aufruf der Seite keine Besucherdaten an einen Drittanbieter — das Einbinden über `fonts.googleapis.com` ist in Deutschland abmahnfähig (LG München I, Urteil vom 20.01.2022, 3 O 17493/20).
+
+Arimo ist eine Variable Font: eine Datei deckt die Gewichte 400 bis 700 ab. Über `unicode-range` lädt der Browser nur, was der Text braucht — für deutsche Inhalte sind das 20 KB (`arimo-latin.woff2`); `arimo-latin-ext.woff2` kommt nur bei Sonderzeichen anderer lateinischer Sprachen dazu.
+
+Lizenz: SIL Open Font License 1.1, siehe `fonts/OFL.txt`.
